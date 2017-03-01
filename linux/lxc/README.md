@@ -9,7 +9,7 @@ lxc.mount.entry=/tmp mnt/tmp none bind,ro 0 0
 lxc.mount.entry=/var/tmp mnt/tmp2 none bind 0 0
 ```
 
-## Network configuration
+## Host Network configuration
 Host network conf `/etc/network/interfaces`
 ```bash
 auto lo
@@ -56,6 +56,7 @@ wanbr0      8000.00c026a6973b   no           enp3s0
                                              veth7F77HL
                                              vethT5RJU8
 ```
+## Guests
 ###One interface 
 ```
 lxc.network.type = veth
