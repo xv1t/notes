@@ -26,9 +26,21 @@ Import public key to user
 ```bash
 /user ssh-keys import public-key-file=id_rsa.pub 
 ```
-
 Test connect via ssh by key without password
-
+```bash
+ssh admin@11.22.33.44 -p 18623
+```
+Fast connect setup:
+```bash
+#File: ~/.ssh/config
+Host mymikrotik
+User admin
+Port 18623
+```
+And run:
+```bash
+ssh mikrotik
+```
 Enjoy
 
 WARNING: After import ssh public key - password auth is deny!
