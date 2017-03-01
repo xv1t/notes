@@ -8,7 +8,7 @@ sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.29999
 
 Edit `/etc/ssh/sshd_config.29999`
 ```
-Port 23022
+Port 29999
 
 PasswordAuthentication no
 
