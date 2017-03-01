@@ -13,8 +13,28 @@ users[manager]="Password1233"
 users[finance]="HtggFDt54364"
 
 for user in "${!users[@]}"; do
+        #Check account exists
+        id $user
+        user_exists="no"
+        if [[ $? == 0 ]]; then
+          #ok
+          user_exists="yes"
+        else
+          #not exists
+          
+          echo "Account [$user] not exist. Add?"
+          adduser $user
+          if [[ $? == 0 ]]; then
+            user_exists="yes"
+          fi
+        fi
+        
         p=${users[$user]}
         echo "user: $user"
         # Automatically set password for SMB account
-        (echo $p; echo $p) | smbpasswd $user -a -s
+        if [[ $user_exists == "yes" ]]; then
+           (echo $p; echo $p) | smbpasswd $user -a -s
+        else
+           echo "local $user not found
+        fi
 done
