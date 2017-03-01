@@ -42,8 +42,8 @@ iface wanbr0 inet static
     bridge_fd           0
 ```
 Bridges list:
-```
-# brctl show
+```bash
+sudo brctl show
 bridge name bridge id           STP enabled  interfaces
 lanbr0      8000.6cf04953642f   no           enp2s0
                                              veth5T5J1P
@@ -66,7 +66,7 @@ lxc.network.hwaddr = 00:16:3e:b0:22:e3
 lxc.network.ipv4 = 192.168.1.184/24
 lxc.network.ipv4.gateway = 192.168.1.199
 ```
-Inside lxc `/etc/network/interfaces`
+Inside lxc `etc/network/interfaces`
 Only set `dns-nameservers`
 ```
 auto eth0
