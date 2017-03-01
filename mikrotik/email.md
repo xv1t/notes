@@ -11,6 +11,10 @@ Prepare mail account and server settings
     start-tls=yes \
     user=mikrotik@yandex.ru
 ```
+## Test message
+```bash
+/tool e-mail send to=admin@yandex.ru subject="Test message subject"
+```
 
 ## Netwatch example
 ```bash
