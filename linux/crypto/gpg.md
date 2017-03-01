@@ -1,4 +1,4 @@
-# gpg-use
+# Compare gpg/tar/gzip
 
 Test results
 
