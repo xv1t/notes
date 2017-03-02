@@ -26,3 +26,6 @@ Minute |  Hour  |  Day of month |   Month | Day of week |     command | Comment
 -------|--------|---------------|---------|-------------|-------------|-----------
 *      |  *     |       *       |   *     |       *     |    ps       | Every minutes    
 59     |  0     |       *       |   *     |   1-5       |    backup   | 
+
+
+Crontab task file saved in `/var/spool/cron/crontabs/root` for user `root`. For user cronber, was `/var/spool/cron/crontabs/cronber`. Cron tasks runs under the own user rights.
