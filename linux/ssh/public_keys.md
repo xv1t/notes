@@ -1,5 +1,7 @@
 # Protect SSH sessions by keys
 
+Firstly, generate ssh keys `ssh-keygen` and copy on the remote server `ssh-copy-id`
+
 Copy `sshd_config` file to `sshd_config.29999`
 
 ```bash
@@ -29,7 +31,7 @@ tcp6       0      0 :::29999                :::*                    LISTEN      
 tcp6       0      0 :::22                   :::*                    LISTEN      1339/sshd
 ```
 
-Generate ssh keys and test connecting:
+Test connecting:
 ```bash
 ssh localhost -p 29999
 ```
