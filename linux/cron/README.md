@@ -29,3 +29,8 @@ Minute |  Hour  |  Day of month |   Month | Day of week |     command | Comment
 
 
 Crontab task file saved in `/var/spool/cron/crontabs/root` for user `root`. For user cronber, was `/var/spool/cron/crontabs/cronber`. Cron tasks runs under the own user rights.
+
+## fast view on the tasks file
+```bash
+crontab -l
+```
