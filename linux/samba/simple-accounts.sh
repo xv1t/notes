@@ -35,6 +35,6 @@ for user in "${!users[@]}"; do
         if [[ $user_exists == "yes" ]]; then
            (echo $p; echo $p) | smbpasswd $user -a -s
         else
-           echo "local $user not found
+           echo "local $user not found"
         fi
 done
