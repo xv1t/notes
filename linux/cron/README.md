@@ -22,6 +22,7 @@ crontab: installing new crontab
 
 ##Examples
 
-Minute |  Hour  |  Day of month |   Month | Day of week |     command
---|--------|---------|
+Minute |  Hour  |  Day of month |   Month | Day of week |     command | Comment
+-------|--------|---------------|---------|-------------|-------------|-----------
+*      |  *     |       *       |   *     |       *     |    ps       | Every minutes    
 
