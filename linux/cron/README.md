@@ -14,3 +14,14 @@ Select an editor.  To change later, run 'select-editor'.
   4. /usr/bin/vim.basic
   5. /usr/bin/vim.tiny
 ```
+
+After change save file and exit
+```
+crontab: installing new crontab
+```
+
+##Examples
+
+Minute |  Hour  |  Day of month |   Month | Day of week |     command
+--|--------|---------|
+
