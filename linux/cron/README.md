@@ -25,4 +25,4 @@ crontab: installing new crontab
 Minute |  Hour  |  Day of month |   Month | Day of week |     command | Comment
 -------|--------|---------------|---------|-------------|-------------|-----------
 *      |  *     |       *       |   *     |       *     |    ps       | Every minutes    
-
+59     |  0     |       *       |   *     |   1-5       |    backup   | 
