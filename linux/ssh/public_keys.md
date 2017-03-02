@@ -1,7 +1,9 @@
 # Protect SSH sessions by keys
 
+## Create keys
 Firstly, generate ssh keys `ssh-keygen` and copy on the remote server `ssh-copy-id`
 
+## SSH Server settings
 Copy `sshd_config` file to `sshd_config.29999`
 
 ```bash
