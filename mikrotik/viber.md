@@ -23,7 +23,7 @@ Add address group `Filtration1` of devices for only viber access
 Add forward rule
 ```bash
 /ip firewall filter
-  add action=accept chain=forward dst-port=5242,4244,5243,9785 log=yes log-prefix=ViberIssue protocol=tcp src-address-list=Filtration1
+  add action=accept chain=forward dst-port=5242,4244,5243,9785 protocol=tcp src-address-list=Filtration1
   add action=accept chain=forward dst-address-list=ViberHosts src-address-list=Filtration1
-  add action=reject chain=forward log=yes log-prefix=ViberIDROP reject-with=icmp-network-unreachable src-address-list=Filtration1
+  add action=reject chain=forward reject-with=icmp-network-unreachable src-address-list=Filtration1
 ```
