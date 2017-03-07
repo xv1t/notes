@@ -1,3 +1,4 @@
+![](https://www.virtualbox.org/graphics/vbox_logo2_gradient.png)
 # VirtualBox-tips
 VirtualBox tips for quick work
 
