@@ -1,3 +1,4 @@
+![](https://linuxcontainers.org/static/img/containers.png)
 # lxc.conf
 ## Mount host dir
 ###Readonly
