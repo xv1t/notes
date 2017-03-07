@@ -10,7 +10,7 @@ On the server and the all clients check a device `/dev/net/tun`
 mkdir /dev/net
 mknod /dev/net/tun c 10 200
 ```
-## Build keys
+## :key: Build keys
 On server:
 ### Prepare key folder
 ```bash
