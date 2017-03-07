@@ -10,5 +10,9 @@ mkdir /dev/net
 mknod /dev/net/tun c 10 200
 ```
 ## Build keys
-## Configurations
+## Server Configuration
+## Client configuration 
+ccd
+
 ## Routes
+## Testing networks
