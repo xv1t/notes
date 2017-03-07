@@ -1,3 +1,4 @@
+![](http://static.xubuntu.org/xubuntu_brand/Logo/PNG/xubuntu_logo_black.png)
 # xubuntu-tuning
 Remove locker
 ```bash
