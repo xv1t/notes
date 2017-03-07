@@ -1,4 +1,4 @@
-#OpenVPN
+![](https://openvpn.net/templates/telethra/img/ovpntech_logo-s.png)
 ## Syncronyze time
 On the server and clients
 ```
