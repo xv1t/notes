@@ -2,10 +2,10 @@
 Example of batch scan
 ```bash
 scanimage \
-      --batch-start 1 \
-      --mode Color \
+      --batch-start "1" \
+      --mode "Color" \
       --progress \
-      -x "198mm" -y "283mm" -l "1mm" \
+       -x "198mm" -y "283mm" -l "1mm" \
       --format "tiff" \
       --resolution "300" \
       --contrast "10" \
