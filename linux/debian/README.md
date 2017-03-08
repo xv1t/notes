@@ -1,3 +1,4 @@
+![](https://www.debian.org/logos/openlogo-nd-100.jpg)
 # debian-notes
 > 8.2 jessie
 
