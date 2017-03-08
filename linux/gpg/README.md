@@ -1,3 +1,4 @@
+![](https://www.gnupg.org/share/logo-gnupg-light-purple-bg.png)
 # Compare gpg/tar/gzip
 Test results
 
