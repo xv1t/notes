@@ -1,0 +1,118 @@
+Usage: scanimage [OPTION]...
+
+Start image acquisition on a scanner device and write image data to
+standard output.
+
+Parameters are separated by a blank from single-character options (e.g.
+-d epson) and by a "=" from multi-character options (e.g. --device-name=epson).
+-d, --device-name=DEVICE   use a given scanner device (e.g. hp:/dev/scanner)
+    --format=pnm|tiff      file format of output file
+-i, --icc-profile=PROFILE  include this ICC profile into TIFF file
+-L, --list-devices         show available scanner devices
+-f, --formatted-device-list=FORMAT similar to -L, but the FORMAT of the output
+                           can be specified: %d (device name), %v (vendor),
+                           %m (model), %t (type), %i (index number), and
+                           %n (newline)
+-b, --batch[=FORMAT]       working in batch mode, FORMAT is `out%d.pnm' or
+                           `out%d.tif' by default depending on --format
+    --batch-start=#        page number to start naming files with
+    --batch-count=#        how many pages to scan in batch mode
+    --batch-increment=#    increase page number in filename by #
+    --batch-double         increment page number by two, same as
+                           --batch-increment=2
+    --batch-print          print image filenames to stdout
+    --batch-prompt         ask for pressing a key before scanning a page
+    --accept-md5-only      only accept authorization requests using md5
+-p, --progress             print progress messages
+-n, --dont-scan            only set options, don't actually scan
+-T, --test                 test backend thoroughly
+-A, --all-options          list all available backend options
+-h, --help                 display this help message and exit
+-v, --verbose              give even more status messages
+-B, --buffer-size=#        change input buffer size (in kB, default 32)
+-V, --version              print version information
+
+Options specific to device `genesys:libusb:001:012':
+  Scan Mode:
+    --mode Color|Gray|Lineart [Gray]
+        Selects the scan mode (e.g., lineart, monochrome, or color).
+    --source Flatbed|Transparency Adapter [inactive]
+        Selects the scan source (such as a document-feeder).
+    --preview[=(yes|no)] [no]
+        Request a preview-quality scan.
+    --depth 8|16 [8]
+        Number of bits per sample, typical values are 1 for "line-art" and 8
+        for multibit scans.
+    --resolution 4800|2400|1200|600|300|150|100|75dpi [75]
+        Sets the resolution of the scanned image.
+  Geometry:
+    -l 0..216.7mm [0]
+        Top-left x position of scan area.
+    -t 0..300mm [0]
+        Top-left y position of scan area.
+    -x 0..216.7mm [216.7]
+        Width of scan-area.
+    -y 0..300mm [300]
+        Height of scan-area.
+  Enhancement:
+    --custom-gamma[=(yes|no)] [no]
+        Determines whether a builtin or a custom gamma-table should be used.
+    --gamma-table 0..65535,... [inactive]
+        Gamma-correction table.  In color mode this option equally affects the
+        red, green, and blue channels simultaneously (i.e., it is an intensity
+        gamma table).
+    --red-gamma-table 0..65535,... [inactive]
+        Gamma-correction table for the red band.
+    --green-gamma-table 0..65535,... [inactive]
+        Gamma-correction table for the green band.
+    --blue-gamma-table 0..65535,... [inactive]
+        Gamma-correction table for the blue band.
+    --swdeskew[=(yes|no)] [no]
+        Request backend to rotate skewed pages digitally
+    --swcrop[=(yes|no)] [no]
+        Request backend to remove border from pages digitally
+    --swdespeck[=(yes|no)] [no]
+        Request backend to remove lone dots digitally
+    --despeck 1..9 (in steps of 1) [1]
+        Maximum diameter of lone dots to remove from scan
+    --swskip 0..100% (in steps of 1) [0]
+        Request driver to discard pages with low numbers of dark pixels
+    --swderotate[=(yes|no)] [no]
+        Request driver to detect and correct 90 degree image rotation
+    --brightness -100..100 (in steps of 1) [0]
+        Controls the brightness of the acquired image.
+    --contrast -100..100 (in steps of 1) [0]
+        Controls the contrast of the acquired image.
+  Extras:
+    --lamp-off-time 0..60 [15]
+        The lamp will be turned off after the given time (in minutes). A value
+        of 0 means, that the lamp won't be turned off.
+    --lamp-off-scan[=(yes|no)] [no]
+        The lamp will be turned off during scan. 
+    --threshold 0..100% (in steps of 1) [50]
+        Select minimum-brightness to get a white point
+    --threshold-curve 0..127 (in steps of 1) [50]
+        Dynamic threshold curve, from light to dark, normally 50-65
+    --disable-dynamic-lineart[=(yes|no)] [no]
+        Disable use of a software adaptive algorithm to generate lineart
+        relying instead on hardware lineart.
+    --disable-interpolation[=(yes|no)] [no]
+        When using high resolutions where the horizontal resolution is smaller
+        than the vertical resolution this disables horizontal interpolation.
+    --color-filter Red|Green|Blue [Green]
+        When using gray or lineart this option selects the used color.
+    --calibration-file <string> [/home/vt/.sane/canon-lide-110.cal]
+        Specify the calibration file to use
+    --expiration-time -1..30000 (in steps of 1) [41448416]
+        Time (in minutes) before a cached calibration expires.A value of 0
+        means cache is not used used. A negative value means cache never
+        expires.
+  Sensors:
+  Buttons:
+    --clear-calibration
+        Clear calibration cache
+
+Type ``scanimage --help -d DEVICE'' to get list of all options for DEVICE.
+
+List of available devices:
+    genesys:libusb:001:012
