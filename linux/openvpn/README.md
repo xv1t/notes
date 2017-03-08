@@ -74,6 +74,44 @@ serial.old
 ```
 
 ## Server Configuration
+
+Example1 Server
+```
+dev tap0
+
+#proto tcp-server
+proto udp
+#port  443
+port 11194
+
+mode server
+
+ifconfig-pool 10.0.3.1 10.0.10.1
+ifconfig 10.0.2.1 255.255.255.0
+
+tls-server
+
+dh   keys/dh1024.pem
+ca   keys/ca.crt
+cert keys/lservice-router.crt
+key  keys/lservice-router.key
+
+up /etc/openvpn/vpn-server.up
+comp-lzo
+
+
+user nobody
+group nogroup
+
+persist-tun
+persist-key
+
+status "/var/log/openvpn/openvpn-status.log"
+log "/var/log/openvpn/openvpn.log"
+log-append "/var/log/openvpn/openvpn.log"
+verb 4
+```
+
 Example `/etc/openvpn/myserver.conf`
 ```
   dev tap0
