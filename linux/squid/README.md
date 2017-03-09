@@ -31,3 +31,69 @@ refresh_pattern -i (/cgi-bin/|\?) 0	0%	0
 refresh_pattern (Release|Packages(.gz)*)$      0       20%     2880
 refresh_pattern .		0	20%	4320
 ```
+
+## Auth
+```
+auth_param basic children 2
+auth_param basic program /var/lib/squid/auth
+auth_param basic realm Proxy zone
+auth_param basic credentialsttl 1 hour
+
+acl auth proxy_auth REQUIRED
+
+#...
+http_access deny !auth
+```
+
+Auth script `/var/lib/squid/auth`
+```bash
+#!/bin/bash
+unset secret
+declare -A secret
+
+load_secret(){
+ secret=
+ . /var/lib/squid/secret
+}
+
+squid_auth(){
+ user=$1
+ passw=$2
+
+if [[ -f "/dev/shm/update-squid-secrets" ]]; then
+ rm "/dev/shm/update-squid-secrets"
+ load_secret
+fi
+
+if [[  ${secret[$user]} == $passw ]]; then
+    echo OK
+else
+    echo ERR
+fi
+}
+
+test1(){
+echo "passwords count ${#secret[@]}"
+echo ${secret[mag]}
+}
+
+start_auth_daemon(){
+ load_secret
+ while read l; do
+     squid_auth $l
+ done
+}
+
+
+start_auth_daemon
+```
+
+File with accounts `/var/lib/squid/secret`
+```bash
+secret[user1]="PassWoRRd1"
+secret[user2]="PassWoRRd2"
+secret[user3]="PassWoRRd3"
+secret[user4]="PassWoRRd4"
+secret[user5]="PassWoRRd55"
+
+```
