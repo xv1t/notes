@@ -53,7 +53,7 @@ declare -A secret
 
 load_secret(){
  secret=
- . /var/lib/squid/secret
+ source "/var/lib/squid/secret"
 }
 
 squid_auth(){
