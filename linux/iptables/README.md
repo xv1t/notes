@@ -1,3 +1,4 @@
+![](http://www.opennet.ru/docs/RUS/iptables/misc/iptables-tutorial/images/tables_traverse.jpg)
 # iptables
 ## Reset all rules
 ```bash
@@ -34,3 +35,4 @@ MARKED="-m mark --mark"
 ANY="0.0.0.0/0.0.0.0"
 SETMARK="-j MARK --set-mark"
 ```
+Example with idioms:
