@@ -66,9 +66,9 @@ if [[ -f "/dev/shm/update-squid-secrets" ]]; then
 fi
 
 if [[  ${secret[$user]} == $passw ]]; then
-    echo OK
+    echo "OK"
 else
-    echo ERR
+    echo "ERR"
 fi
 }
 
@@ -84,8 +84,8 @@ start_auth_daemon(){
  done
 }
 
-
 start_auth_daemon
+#EOF
 ```
 
 File with accounts `/var/lib/squid/secret`
