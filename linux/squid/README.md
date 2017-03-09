@@ -1,3 +1,5 @@
+![](http://www.squid-cache.org/Artwork/Banner.png)
+
 #squid.conf simple
 Default configuration `/etc/squid/squid.conf`
 ```bash
