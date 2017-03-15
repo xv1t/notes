@@ -1,4 +1,4 @@
-#Backuping
+# Backuping
 ## Directory to tar
 Simple
 ```bash
@@ -27,6 +27,8 @@ tar cz .                       \
 | ssh "login@sshserver"          \
   "cat > /srv/backup/mybackup.tar.gz"
 ```
+WARNING! If ssh host not avialable, then file `/srv/data/backup.tar.gz` to be an empty
+
 ## Check avialable of remote ssh host
 ```bash
 if ssh me@host.com true; then
