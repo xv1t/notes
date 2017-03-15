@@ -22,5 +22,16 @@ tar c | gzip > "/srv/data/backup.tar"
 
 Double archiving: local and send to ssh
 ```bash
-tar cz . | tee "/srv/data/backup.tar.gz" | ssh "login@sshserver" "cat > /srv/backup/mybackup.tar.gz"
+tar cz . \
+| tee "/srv/data/backup.tar.gz" \
+| ssh "login@sshserver" \
+  "cat > /srv/backup/mybackup.tar.gz"
+```
+## Check avialable of remote ssh host
+```bash
+if ssh me@host.com true; then
+  echo "Connect is ok"
+else
+  echo "connection failed"
+fi
 ```
