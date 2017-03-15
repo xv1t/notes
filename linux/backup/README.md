@@ -35,3 +35,12 @@ else
   echo "connection failed"
 fi
 ```
+
+## Test via ping
+```bash
+if ping "testhost" -c 2 -q; then
+  echo "ok"
+else
+  echo "false"
+fi
+```
