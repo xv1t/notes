@@ -50,5 +50,5 @@ blocksize       del             getfacl         link            mask            
 ## Copy file to smberver
 Copy file `/etc/hosts` to share `public`
 ```bash
-smbclient //smbserver/public -c "put /etc/hosts" -U Administrator
+smbclient //smbserver/public -c "put /etc/hosts hosts" -U Administrator
 ```
