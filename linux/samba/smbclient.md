@@ -30,6 +30,8 @@ Domain=[WORKGROUP] OS=[Windows 6.1] Server=[Samba 4.3.11-Ubuntu]
 ## Explore smb share
 ```bash
 smbclient `\\smbserver\public` -U Administrator
+#or
+smbclient //smbserver/public` -U Administrator
 ```
 Example output
 ```
@@ -44,4 +46,9 @@ altname         chmod           exit            iosize          logon           
 archive         chown           get             l               lowercase       mput            posix_open      q               rename          showconnect     tid             
 backup          close           geteas          lcd             ls              newer           posix_rmdir     queue           reput           stat            timeout         
 blocksize       del             getfacl         link            mask            notify          posix_unlink    quit            rm              symlink         translate
+```
+## Copy file to smberver
+Copy file `/etc/hosts` to share `public`
+```bash
+smbclient //smbserver/public -c "put /etc/hosts" -U Administrator
 ```
