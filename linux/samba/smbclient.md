@@ -64,8 +64,12 @@ smb: \> help put
 HELP put:
 	<local name> [remote name] put a file
 ```
-## Copy file to smberver
+## Upload file to smberver
 Copy file `/etc/hosts` to share `public`
 ```bash
 smbclient //smbserver/public -c "put /etc/hosts hosts" -U Administrator
+```
+## Download file
+```
+mget remotefile
 ```
