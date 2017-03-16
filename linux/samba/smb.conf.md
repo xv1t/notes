@@ -9,7 +9,7 @@
 ```ini
 [LTech]
   path = /srv/sambashare/LTech
-  write list = @LTechE @"Domain Admins" taganinany hrustalevasa
+  write list = @LTechE @"Domain Admins" user1 user2
   read list  = @LTechV
   force user = nobody
   force group = nogroup
