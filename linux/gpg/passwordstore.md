@@ -76,4 +76,5 @@ mkdir: создан каталог '/root/.password-store/'
 Password store initialized for root password storage key
 ```
 [https://www.passwordstore.org/](https://www.passwordstore.org/)
+
 http://xmodulo.com/manage-passwords-command-line-linux.html
