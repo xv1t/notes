@@ -27,3 +27,21 @@ Domain=[WORKGROUP] OS=[Windows 6.1] Server=[Samba 4.3.11-Ubuntu]
 	---------            -------
 	WORKGROUP            SMBSERVER
 ```
+## Explore smb share
+```bash
+smbclient `\\smbserver\public` -U Administrator
+```
+Example output
+```
+smb: \> 
+```
+Abialable commands:
+```
+?               cancel          dir             hardlink        listconnect     md              open            print           rd              rmdir           tar             unlock
+..              case_sensitive  du              help            lock            mget            posix           prompt          readlink        setea           tarmode         volume
+allinfo         cd              echo            history         logoff          mkdir           posix_encrypt   put             recurse         setmode         tcon            vuid
+altname         chmod           exit            iosize          logon           more            posix_mkdir     pwd             reget           showacls        tdis            wdel
+archive         chown           get             l               lowercase       mput            posix_open      q               rename          showconnect     tid             
+backup          close           geteas          lcd             ls              newer           posix_rmdir     queue           reput           stat            timeout         
+blocksize       del             getfacl         link            mask            notify          posix_unlink    quit            rm              symlink         translate
+```
