@@ -70,4 +70,10 @@ sub   2048R/47D0430B 2017-03-16
 [http://eax.me/gpg/](http://eax.me/gpg/)
 
 ## Passwordstore 
+```bash
+pass init "root password storage key"
+mkdir: создан каталог '/root/.password-store/'
+Password store initialized for root password storage key
+```
 [https://www.passwordstore.org/](https://www.passwordstore.org/)
+http://xmodulo.com/manage-passwords-command-line-linux.html
