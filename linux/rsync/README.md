@@ -11,9 +11,9 @@ time   \
 rsync   \
   $LOCAL_SRC $REMOTE:$REMOTE_DST    \
   --exclude-from=$LOCAL_SRC/.exclude \
-	--delete-excluded	--delete-after    \
+  --delete-excluded   --delete-after  \
   -a -v -h  \
-	-e ssh     \
+  -e ssh     \
   --delete    \
-	--progress
+  --progress
 ```
