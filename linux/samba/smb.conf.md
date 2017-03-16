@@ -1,5 +1,11 @@
 # smb.conf
 ## Recycle
+`%S` - Sharename
+
+`%u` - username
+
+`%m` - user machine hostname
+
 ```ini
 [LTech]
   path = /srv/sambashare/LTech
