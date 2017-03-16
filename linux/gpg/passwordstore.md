@@ -55,26 +55,31 @@ gpg: создана таблица ключей `/root/.gnupg/pubring.gpg'
 Недостаточно случайных чисел. Займитесь какой-нибудь другой работой,
 чтобы ОС могла получить больше случайных данных! (Нужно еще 117 байт)
 ..+++++
-gpg: ключ E295285E помечен как абсолютно доверенный.
-открытый и закрытый ключи созданы и подписаны.
+gpg: key 38459DDA marked as ultimately trusted
+public and secret key created and signed.
 
-gpg: проверка таблицы доверия
-gpg: требуется 3 с ограниченным доверием, 1 с полным, модель доверия PGP
-gpg: глубина: 0  верных:   1  подписанных:   0  доверие: 0-, 0q, 0n, 0m, 0f, 1u
-pub   2048R/E295285E 2017-03-16
-      Отпечаток ключа = 85E3 CDCE 2F75 78C4 7CE4  DD07 BBCF 1D25 E295 285E
-uid                  RootRoot (comment) <root@localhost>
-sub   2048R/47D0430B 2017-03-16
+gpg: checking the trustdb
+gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+pub   2048R/38459DDA 2017-03-16
+      Key fingerprint = FC69 CCB9 F766 1F8D D5E1  1A10 7060 6C10 3845 9DDA
+uid                  Realname (ItsComment) <email@darkstar.com>
+sub   2048R/B20268A5 2017-03-16
+
 ```
 
 [http://eax.me/gpg/](http://eax.me/gpg/)
 
 ## Passwordstore 
+Initialize. 
 ```bash
-pass init "root password storage key"
-mkdir: создан каталог '/root/.password-store/'
-Password store initialized for root password storage key
+pass init email@darkstar.com
+Password store initialized for email@darkstar.com
 ```
+
+
+Links
+
 [https://www.passwordstore.org/](https://www.passwordstore.org/)
 
 http://xmodulo.com/manage-passwords-command-line-linux.html
