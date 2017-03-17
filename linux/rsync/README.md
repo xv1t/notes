@@ -1,5 +1,5 @@
 # RSync
-## Example SSH
+## SSH prorocolt
 ```bash
 LOCAL_SRC="/srv/data/arch/photo"
 REMOTE_DST="/srv/data0/backup10/picasa/mirror"
@@ -20,7 +20,8 @@ rsync   \
 	--progress
 ```
 
-## Rsync server
+## Rsync proto
+### RSYNC server [backup storage]
 `/etc/rsyncd.conf`, file mode `0600`
 ```ini
 pid file = /var/run/rsyncd.pid
@@ -51,7 +52,7 @@ Start service
 ```bash
 service start rsync
 ```
-
+### Rsync client with data source
 ```bash
 #client
 SRC="/srv/data0/home/xvit/"
