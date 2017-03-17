@@ -12,12 +12,12 @@ time   \
 rsync   \
   $LOCAL_SRC $REMOTE:$REMOTE_DST    \
   --exclude-from=$LOCAL_SRC/.exclude \
-	--delete-excluded	--delete-after    \
-	--backup --backup-dir=$BACKUP_DIR    \
+  --delete-excluded	--delete-after    \
+  --backup --backup-dir=$BACKUP_DIR    \
   -a -v -h  \
-	-e ssh     \
+  -e ssh     \
   --delete    \
-	--progress
+  --progress
 ```
 
 ## Rsync protocol
@@ -31,14 +31,14 @@ munge symlinks = yes
 
 # папка источник для бэкапа
 [data0]
-path = /srv/data0/backup/rsync/
-uid = root
-read only = no
-write only = yes
-list = yes
-comment = Data backup Dir
-auth users = backup
-secrets file = /etc/rsyncd.scrt
+	path = /srv/data0/backup/rsync/
+	uid = root
+	read only = no
+	write only = yes
+	list = yes
+	comment = Data backup Dir
+	auth users = backup
+	secrets file = /etc/rsyncd.scrt
 ```
 `/etc/rsyncd.scrt`, file mode `0600`
 ```
