@@ -24,10 +24,11 @@ rsync   \
 ### RSYNC server [backup storage]
 `/etc/rsyncd.conf`
 ```ini
-pid file = /var/run/rsyncd.pid
-log file = /var/log/rsyncd.log
-transfer logging = true
-munge symlinks = yes
+#global options
+	pid file = /var/run/rsyncd.pid
+	log file = /var/log/rsyncd.log
+	transfer logging = true
+	munge symlinks = yes
 
 # папка источник для бэкапа
 [data0]
