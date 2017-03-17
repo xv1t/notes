@@ -1,5 +1,5 @@
 # RSync
-Example SSH
+## Example SSH
 ```bash
 LOCAL_SRC="/srv/data/arch/photo"
 REMOTE_DST="/srv/data0/backup10/picasa/mirror"
