@@ -1,3 +1,4 @@
+![](https://rsync.samba.org/newrsynclogo.jpg)
 # RSync
 ## SSH protocol
 ```bash
