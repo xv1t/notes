@@ -21,7 +21,7 @@ rsync   \
 ```
 
 ## Rsync server
-`/etc/rsyncd.conf`
+`/etc/rsyncd.conf`, file mode `0600`
 ```ini
 pid file = /var/run/rsyncd.pid
 log file = /var/log/rsyncd.log
@@ -43,7 +43,14 @@ secrets file = /etc/rsyncd.scrt
 ```
 backup:12345678
 ```
-
+Set in file `/etc/default/rsync`
+```bash
+RSYNC_ENABLE=true
+```
+Start service
+```bash
+service start rsync
+```
 
 ```bash
 #client
@@ -61,7 +68,7 @@ rsync \
 	--password-file=$HOME/.rsync.pass \
 	$SRC rsync://$DST
 ```
-`$HOME/.rsync.pass`
+`$HOME/.rsync.pass`, file mode `0600`
 ```
 12345678
 ```
