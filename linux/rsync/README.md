@@ -9,16 +9,17 @@ REMOTE_DST="/srv/data0/backup10/picasa/mirror"
 REMOTE="backup@server"
 BACKUP_DIR="/srv/data0/backup10/picasa/history/`date +%Y/%m/%d`"
 
-time   \
-rsync   \
-  $LOCAL_SRC $REMOTE:$REMOTE_DST    \
-  --exclude-from=$LOCAL_SRC/.exclude \
-  --delete-excluded	--delete-after    \
-  --backup --backup-dir=$BACKUP_DIR    \
+time      \
+rsync      \
   -a -v -h  \
   -e ssh     \
   --delete    \
-  --progress
+  --progress   \
+  $LOCAL_SRC $REMOTE:$REMOTE_DST     \
+  --exclude-from=$LOCAL_SRC/.exclude  \
+  --delete-excluded	--delete-after \
+  --backup --backup-dir=$BACKUP_DIR    
+
 ```
 
 ## Rsync protocol
@@ -63,12 +64,14 @@ DST="backup@meta11/data0/ltex01/home/current/"
 
 time \
 rsync \
-	-avv \
-	--progress \
-	--delete --delete-excluded      --delete-after  \
-	--exclude-from=$HOME/.exclude \
+	-avv                        \
+	--progress                   \
+	--delete                      \
+	--delete-excluded              \
+	--delete-after                  \
+	--exclude-from=$HOME/.exclude    \
 	--backup --backup-dir=$BACKUP_DIR \
-	--password-file=$HOME/.rsync.pass \
+	--password-file=$HOME/.rsync.pass  \
 	$SRC rsync://$DST
 ```
 `$HOME/.rsync.pass`, file mode `0600`
