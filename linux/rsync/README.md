@@ -1,5 +1,5 @@
 # RSync
-## SSH prorocolt
+## SSH protocol
 ```bash
 LOCAL_SRC="/srv/data/arch/photo"
 REMOTE_DST="/srv/data0/backup10/picasa/mirror"
@@ -20,9 +20,9 @@ rsync   \
 	--progress
 ```
 
-## Rsync proto
+## Rsync protocol
 ### RSYNC server [backup storage]
-`/etc/rsyncd.conf`, file mode `0600`
+`/etc/rsyncd.conf`
 ```ini
 pid file = /var/run/rsyncd.pid
 log file = /var/log/rsyncd.log
@@ -40,7 +40,7 @@ comment = Data backup Dir
 auth users = backup
 secrets file = /etc/rsyncd.scrt
 ```
-`/etc/rsyncd.scrt`
+`/etc/rsyncd.scrt`, file mode `0600`
 ```
 backup:12345678
 ```
