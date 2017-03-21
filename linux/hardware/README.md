@@ -1,8 +1,9 @@
-# Hard disk info
+# Hardware information
+## Hard disk
 ```bash
 hddparm -I /dev/sda
 ```
-# System info: motherboard, buses and other
+## System: motherboard, buses and other
 ```bash
 dmidecode
 ```
