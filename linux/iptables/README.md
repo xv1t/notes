@@ -1,5 +1,7 @@
 ![](http://www.opennet.ru/docs/RUS/iptables/misc/iptables-tutorial/images/tables_traverse.jpg)
 # iptables
+http://www.opennet.ru/docs/RUS/iptables/
+
 ## Reset all rules
 ```bash
 for table in "nat" "filter" "mangle"; do
