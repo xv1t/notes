@@ -1,6 +1,7 @@
 # Screencast
 
 ## SimpleScreenRecorder
+![](http://files.maartenbaert.be/simplescreenrecorder/screenshot.png)
 
 http://www.maartenbaert.be/simplescreenrecorder/
 
