@@ -3,7 +3,7 @@
 2. https://github.com/awesome-lists/awesome-bash
 ## Multiline
 ```bash
-tar  \
+tar   \
   xvfz \
   "File.tar.gz" 
 ```
