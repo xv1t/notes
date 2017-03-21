@@ -1,4 +1,6 @@
 # bash
+1. http://rus-linux.net/MyLDP/BOOKS/abs-guide/flat/abs-book.html
+2. https://github.com/awesome-lists/awesome-bash
 ## Multiline
 ```bash
 tar  \
