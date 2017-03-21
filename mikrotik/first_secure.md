@@ -1,5 +1,5 @@
 # Secure MikroTik settings
-## ip services
+## 1. ip services
 
 Change ssh port to unstandart, winbox filter access networks
 
@@ -14,7 +14,7 @@ Change ssh port to unstandart, winbox filter access networks
   set api-ssl disabled=yes
 ```
 
-## SSH
+## 2. SSH
 
 generate on your localhost key with passphrase
 ```bash
@@ -44,6 +44,6 @@ ssh mikrotik
 Enjoy
 
 WARNING: After import ssh public key - password auth is deny!
-## Tools/Mac server
-## IP/Neighbor List/Discovery Interfaces
+## 3. Tools/Mac server
+## 4. IP/Neighbor List/Discovery Interfaces
 
