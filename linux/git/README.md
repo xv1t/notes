@@ -7,7 +7,8 @@ File in the bare repo `/git/iodoc.git/hooks/post-receive`
 LOCAL_PATH="/var/www/iodoc/app"
 
 echo "Update files: $LOCAL_PATH"
-ssh ubuntu@ioweb01 "cd $LOCAL_PATH; git pull origin master; date +'%Y-%m-%d %H:%M:%S' > /var/www/iodoc/tmp/logs/last.commit.log";
+# Remote connect to the deploy place and pulling last changes
+ssh ubuntu@ioweb01 "cd $LOCAL_PATH; git pull origin master";
 ```
 
 After the any `git push` server run trigger script `/git/iodoc.git/hooks/post-receive`
