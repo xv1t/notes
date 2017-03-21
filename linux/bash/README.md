@@ -31,6 +31,8 @@ tar c .               \
 | ssh "user@remotehost" "cat > /srv/data/backup/file.tar"
 ```
 ## Arrays
+https://habrahabr.ru/sandbox/102954/
+
 Declare
 ```bash
 declare -A users;
