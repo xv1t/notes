@@ -1,6 +1,6 @@
 # Viber traffic separation
 
-Add server address list
+## Add server address list
 ```bash
 /ip firewall address-list
 add address=app.adjust.com list=ViberHosts
@@ -30,13 +30,13 @@ add address=pg-vb.cdn.viber.com list=ViberHosts
 add address=voipnina.com list=ViberHosts
 ```
 
-Add address group `Filtration1` of devices for only viber access
+## Add address group `Filtration1` of devices for only viber access
 ```
 /ip firewall address-list
   add address=192.168.1.78 list=Filtration1
 ```
 
-Add forward rule
+## Add forward rule
 ```bash
 /ip firewall filter
   add action=accept chain=forward comment=Viber dst-port=5242,4244 protocol=tcp src-address-list=Filtration1
