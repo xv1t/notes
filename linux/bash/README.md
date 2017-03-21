@@ -30,3 +30,20 @@ tar c .               \
 | tee "/srv/local.tar" \
 | ssh "user@remotehost" "cat > /srv/data/backup/file.tar"
 ```
+## Arrays
+Declare
+```bash
+declare -A users;
+```
+### Input data
+```bash
+users[user1]="Password123"
+users[manager]="Password1233"
+users[finance]="HtggFDt54364"
+```
+### Cycling items
+```bash
+for user in "${!users[@]}"; do
+      password=${users[$user]}
+done;
+```
