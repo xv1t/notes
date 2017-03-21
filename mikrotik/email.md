@@ -3,8 +3,8 @@
 Prepare mail account and server settings
 
 ```bash
-/tool e-mail set         \
-    address=smtp.yandex.ru\
+/tool e-mail set          \
+    address=smtp.yandex.ru \
     from=mikrotik@yandex.ru \
     password=Password2019    \
     port=587                  \
