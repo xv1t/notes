@@ -1,4 +1,5 @@
 # Secure MikroTik settings
+Fast setting for securing
 ## 1. ip services
 
 Change ssh port to unstandart, winbox filter access networks
