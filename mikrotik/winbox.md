@@ -6,4 +6,4 @@ Latest version https://mikrotik.com/download
 WinBox create configuration folder `%USERNAME%/Application Data/Mikrotik/Winbox`
 
 ## Security
-Set `master password` for WinBox and save passwords on the your sessions
+Set `Managed` -> `Master Password` for WinBox and save passwords on the your sessions
