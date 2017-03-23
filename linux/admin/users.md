@@ -7,7 +7,7 @@ adduser "newuser"
 ## Change user groups
 Only one group
 ```
-usermod -G developers user1 
+usermod -G "developers" "user1" 
 ```
 
 Only set grou list
