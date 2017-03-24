@@ -88,3 +88,6 @@ lxc.network.flags=up
 lxc.network.hwaddr= 00:16:3e:ae:d0:a6
 lxc.network.name = eth1
 ```
+
+№ Links
+1. http://eax.me/lxc/
