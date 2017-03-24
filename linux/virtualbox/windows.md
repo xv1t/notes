@@ -2,7 +2,7 @@
 
 https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
 
-## Language
+## Add a language
 
 1. Start
 2. `Setting` button
@@ -16,9 +16,6 @@ https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
 10. Click `Download language pack`
 11. Waiting for download
 12. `Log out` or `Reboot`
-
-
-https://www.itechtics.com/windows-10-language-packs-direct-download-links/
 
 ## Autologon
 
