@@ -15,6 +15,7 @@ https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
 9. Click `Options`
 10. Click `Download language pack`
 11. Waiting for download
+12. `Log out` or `Reboot`
 
 
 https://www.itechtics.com/windows-10-language-packs-direct-download-links/
