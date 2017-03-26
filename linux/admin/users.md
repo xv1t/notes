@@ -6,7 +6,7 @@ adduser "newuser"
 ```
 ## Change user groups
 Only one group
-```
+```bash
 usermod -G "developers" "user1" 
 ```
 
