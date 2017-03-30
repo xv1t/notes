@@ -11,9 +11,10 @@ Change ssh port to unstandart, winbox filter access networks
   set www disabled=yes
   set ssh port=18623
   set api disabled=yes
-  set winbox address=192.168.88.0/24,127.0.0.0/24
+  set winbox port=63251
   set api-ssl disabled=yes
 ```
+Winbox port mast be set not standart, for example, `63251`
 
 ## 2. SSH
 
