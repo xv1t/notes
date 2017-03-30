@@ -71,8 +71,9 @@ Inside lxc `etc/network/interfaces`
 Only set `dns-nameservers`
 ```
 auto eth0
-iface eth0 inet manual
-dns-nameservers 10.0.0.199
+iface eth0 inet     manual
+dns-nameservers     10.0.0.199
+dns-search          abcd.local
 ```
 ### Two interface
 ```
