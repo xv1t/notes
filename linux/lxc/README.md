@@ -98,11 +98,14 @@ lxc.network.name = eth1
 
 Initialize lvm
 ```bash
-pvcreate /dev/sdb
-vgcreate -s 32M "group1" /dev/sdb
+#Create partition
+pvcreate "/dev/sdb"
 
-#example, create standalone partition, not for LXC
-lvcreate -n 1TB -L 1TB group1
+#Create group of volumes
+vgcreate -s 32M "group1" "/dev/sdb"
+
+#example, create standalone partition name "1TB" in the "group1", not for LXC
+lvcreate -n 1TB -L "1TB" "group1"
 ```
 
 Delete lvm partition
@@ -154,7 +157,7 @@ lvs
   1TB          group1 -wi-ao----   1,00t                                                    
   backup201703 group1 -wi-ao---- 100,00g
 ```
-### Conf
+### Config
 ```ini
 lxc.rootfs = /dev/group1/backup201703
 lxc.rootfs.backend = lvm
