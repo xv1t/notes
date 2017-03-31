@@ -92,3 +92,65 @@ lxc.network.name = eth1
 
 № Links
 1. http://eax.me/lxc/
+
+
+## LVM storage
+
+Initialize lvm
+```bash
+pvcreate /dev/sdb
+vgcreate -s 32M "group1" /dev/sdb
+
+#example, create standalone partition, not for LXC
+lvcreate -n 1TB -L 1TB group1
+```
+
+Delete lvm partition
+```bash
+lvremove "/dev/group1/lxc_test"
+```
+
+```bash
+
+#create container, WARNING: LVM storage creates automatically!
+lxc-create 
+    -n "backup201703" \
+    -t "ubuntu"        \
+    -B "lvm"            \
+    --vgname=group1      \
+    --fssize=100G         \
+    --fstype=ext4
+```
+
+### Monitoring
+```bash
+vgdisplay
+
+  --- Volume group ---
+  VG Name               group1
+  System ID             
+  Format                lvm2
+  Metadata Areas        1
+  Metadata Sequence No  9
+  VG Access             read/write
+  VG Status             resizable
+  MAX LV                0
+  Cur LV                2
+  Open LV               2
+  Max PV                0
+  Cur PV                1
+  Act PV                1
+  VG Size               1,82 TiB
+  PE Size               32,00 MiB
+  Total PE              59616
+  Alloc PE / Size       35968 / 1,10 TiB
+  Free  PE / Size       23648 / 739,00 GiB
+  VG UUID               wG9e3Y-LZYy-IE9J-KU1K-gHGm-4Pzu-y9xpKg
+```
+
+```bash
+lvs
+  LV           VG     Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  1TB          group1 -wi-ao----   1,00t                                                    
+  backup201703 group1 -wi-ao---- 100,00g
+```
