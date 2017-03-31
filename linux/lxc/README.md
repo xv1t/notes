@@ -154,3 +154,8 @@ lvs
   1TB          group1 -wi-ao----   1,00t                                                    
   backup201703 group1 -wi-ao---- 100,00g
 ```
+### Conf
+```ini
+lxc.rootfs = /dev/group1/backup201703
+lxc.rootfs.backend = lvm
+```
