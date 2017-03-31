@@ -1,6 +1,8 @@
 # Studio One Config
 
-1. `Studio One` -> `Options` -> `Audio Setup` -> `Internal Block Size` = `128 Samples`
-2. `Studio One` -> `Options` -> `Audio Setup` -> `Audio Device` -> `Control Panel` -> `Latensi [ms]` - set to `10`
+## `Studio One` -> `Options` -> `Audio Setup`
+
+1. `Internal Block Size` = `128 Samples`
+2. `Audio Device` -> `Control Panel` -> `Latency [ms]` - set to `10`
 
 ## MIDI keyboard
