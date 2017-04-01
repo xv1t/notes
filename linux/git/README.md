@@ -14,10 +14,10 @@ ssh ubuntu@ioweb01 "cd $LOCAL_PATH; git pull origin master";
 After the any `git push` server run trigger script `/git/iodoc.git/hooks/post-receive`
 
 # Create local repository
-```
+```bash
 cd $HOME
-mkdir -p git/testproj.git
-cd git/testproj.git
+mkdir -p "git/testproj.git"
+cd "git/testproj.git"
 git init --bare
 ```
 
