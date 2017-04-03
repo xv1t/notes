@@ -20,4 +20,13 @@ cat .git/HEAD
 
 ## Create new branch
 ```bash
-git
+git branch "dev"
+
+#and set as current
+git checkout "dev"
+```
+or
+```bash
+#create and automatically switch
+git checkout -b "dev"
+```
