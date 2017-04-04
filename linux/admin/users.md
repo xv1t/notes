@@ -4,6 +4,28 @@ Fast
 ```bash
 adduser "newuser"
 ```
+
+```bash
+useradd "testuser" \
+  --home-dir "/home/testuser" \
+  --create-home
+```
+
+Create in the custom group
+```bash
+useradd "testuser" \
+  --home-dir "/home/testuser" \
+  --create-home \
+  -g "users" \
+  -N `#do not create group with username`
+  
+```
+
+## Remove user account from system
+```bash
+userdel "username"
+```
+
 ## Change user groups
 Only one group
 ```bash
