@@ -13,6 +13,12 @@ Example
   master
 ```
 
+```bash
+git branch -r
+origin/dev
+origin/master
+```
+
 ## Current branch
 ```
 cat .git/HEAD
