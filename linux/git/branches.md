@@ -36,3 +36,16 @@ or
 #create and automatically switch
 git checkout -b "dev"
 ```
+
+## Connect to new remote branch
+```bash
+
+git branch
+* master
+
+git pull
+git checkout dev2
+git branch
+* dev2
+  master
+```
