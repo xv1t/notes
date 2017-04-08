@@ -12,3 +12,7 @@ http://ubuntu66.ru/2014/12/15/simplescreenrecorder-zapis-video-s-vashego-raboche
 https://www.youtube.com/watch?v=cmK7kQ-Tm2M
 
 https://en.wikipedia.org/wiki/SimpleScreenRecorder
+
+## OBS Studio
+
+https://github.com/jp9000/obs-studio/wiki/install-instructions#linux
