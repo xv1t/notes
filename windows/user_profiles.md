@@ -1,4 +1,7 @@
 # Profile path
+
+Open `regedit`
+
 1. HKEY_LOCAL_MACHINE
 2. SOFTWARE
 3. Microsoft
