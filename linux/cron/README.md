@@ -22,10 +22,11 @@ crontab: installing new crontab
 
 ##Examples
 
+
 Minute |  Hour  |  Day of month |   Month | Day of week |     command | Comment
--------|--------|---------------|---------|-------------|-------------|-----------
+-------|--------|---------------|---------|-------------|-------------|-------------------
 *      |  *     |       *       |   *     |       *     |    ps       | Every minutes    
-59     |  0     |       *       |   *     |   1-5       |    backup   | 
+59     |  0     |       *       |   *     |   1-5       |    backup   |              
 59     |  */3   |       *       |   */2   |    *        |    backup   | Every third hour, every second day
 
 
