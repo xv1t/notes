@@ -2,6 +2,12 @@
 Links
 https://www.samba.org/samba/docs/using_samba/ch06.html#samba2-CHP-6-TABLE-2
 
+## Reload configuration
+```bash 
+# Ubuntu Server
+/etc/init.d/samba force-reload
+```
+
 ## Recycle
 `%S` - Sharename
 
