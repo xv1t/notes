@@ -20,14 +20,14 @@ chmod 777 "/srv/samba/public"
 Section in `smb.conf`
 ```ini
 [public]
-  path = /srv/samba/public
-  guest ok = yes
-  read only = no
-  writable = yes
-  force user = nobody
-  force group = sambashare
-  create mask = 775
-  directory mask = 775
+  path            = /srv/samba/public
+  guest ok        = yes
+  read only       = no
+  writable        = yes
+  force user      = nobody
+  force group     = sambashare
+  create mask     = 775
+  directory mask  = 775
 ```
 
 
