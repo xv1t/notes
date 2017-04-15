@@ -8,6 +8,29 @@ https://www.samba.org/samba/docs/using_samba/ch06.html#samba2-CHP-6-TABLE-2
 /etc/init.d/samba force-reload
 ```
 
+## Public share
+
+Create directory `/srv/samba/public`
+```bash
+mkdir -p "/srv/samba/public"
+chown noboby:sambashare "/srv/samba/public"
+chmod 777 "/srv/samba/public"
+```
+
+Section in `smb.conf`
+```ini
+[public]
+  path = /srv/samba/public
+  guest ok = yes
+  read only = no
+  writable = yes
+  force user = nobody
+  force group = sambashare
+  create mask = 775
+  directory mask = 775
+```
+
+
 ## Recycle
 `%S` - Sharename
 
