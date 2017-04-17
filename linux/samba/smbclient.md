@@ -1,4 +1,8 @@
 # smbclient
+
+links
+1. http://smb-conf.ru/smbclient-command-line-smb-client.html
+
 ## List shares
 ```bash
 smbclient -L smbserver -U Administrator
