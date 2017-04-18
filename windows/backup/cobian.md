@@ -6,4 +6,5 @@ Download http://www.cobiansoft.com/cobianbackup.htm
 При работе с VSFTPD:
 
 `Файлы` -> `Пути назначения` -> `Настройка FTP` -> `Дополнительно`
+
 [x] Принудительный UTF-8
