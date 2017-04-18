@@ -46,3 +46,10 @@ else
   echo "false"
 fi
 ```
+
+## Delete old files
+Delete older then week (+7 days) 
+```bash
+cd $BACKUP_DIR
+find -type f -mtime +7 -delete
+```
