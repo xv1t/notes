@@ -7,4 +7,4 @@ Download http://www.cobiansoft.com/cobianbackup.htm
 
 `Файлы` -> `Пути назначения` -> `Настройка FTP` -> `Дополнительно`
 
-[x] Принудительный UTF-8
+- [x] Принудительный UTF-8
