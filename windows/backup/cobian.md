@@ -1,5 +1,5 @@
 # Cobian backup
-Download http://www.cobiansoft.com/cobianbackup.htm
+http://www.cobiansoft.com/cobianbackup.htm
 
 ## Задания
 ### Кодировка FTP
