@@ -29,3 +29,7 @@ git remote -v
 origin	/home/ubuntu/git/testproj.git/ (fetch)
 origin	/home/ubuntu/git/testproj.git/ (push)
 ```
+# Reset file changes
+```bash
+git checkout -- Dir/File
+```
