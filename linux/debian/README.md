@@ -17,7 +17,7 @@ su
 apt-get install sudo
 
 #add your user account to group
-useradd -G sudo "$USER_NAME"
+usermod -G sudo "$USER_NAME"
 
 #logout from session!
 ```
