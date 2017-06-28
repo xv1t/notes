@@ -1,4 +1,4 @@
-# Download file from WebDAV
+# Download WebDAV
 With password prompt
 ```bash
 curl \
@@ -20,4 +20,11 @@ curl "https://webdav.yandex.ru/folder/dlink620.txt" \
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100    97  100    97    0     0    154      0 --:--:-- --:--:-- --:--:--   154
+```
+# Upload to WebDAV
+```bash
+curl \
+  -T "Thumbs.db" `#Local file` \
+  https://webdav.yandex.ru/tmp/Thumbs.db `#Remote full file path` \
+  --user "username"
 ```
