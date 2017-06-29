@@ -10,6 +10,12 @@ Google Chrome       | https://www.google.ru/chrome/browser/desktop/index.html
 Google Chrome (MSI) | https://enterprise.google.com/intl/en_version/chrome/chrome-browser/
 Skype               | https://www.skype.com/ru/download-skype/skype-for-computer/
 
+## Hardware
+Name    | link
+--------|----------------------------------------------
+ HWiNFO | https://www.hwinfo.com/download.php
+ CPUz   | http://www.cpuid.com/softwares/cpu-z.html
+
 ## Antivirus
 Name                   | Link
 -----------------------|--------------------------------------------------------------
