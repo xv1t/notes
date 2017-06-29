@@ -1,5 +1,5 @@
-WebDAV: http://www.qed42.com/blog/using-curl-commands-webdav
-Secure: https://coderwall.com/p/dsfmwa/securely-use-basic-auth-with-curl
+1. WebDAV: http://www.qed42.com/blog/using-curl-commands-webdav
+2. Secure: https://coderwall.com/p/dsfmwa/securely-use-basic-auth-with-curl
 
 # Download WebDAV
 With password prompt
