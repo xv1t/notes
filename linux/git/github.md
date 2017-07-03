@@ -12,4 +12,4 @@ Syntax bloks languages
 3. Create `img` directory
 4. Put pictures or other files
 5. commit it
-6. Link to file https://raw.githubusercontent.com/wiki/<USERNAME>/<PROJECTNAME>/img/github.png
+6. Link to file https://raw.githubusercontent.com/wiki/USERNAME/PROJECTNAME/img/github.png
