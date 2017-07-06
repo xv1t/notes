@@ -18,7 +18,7 @@ Name    | link
 ## Antivirus
 Name                   | Link
 -----------------------|--------------------------------------------------------------
-MS Security Essentials | https://www.microsoft.com/ru-ru/download/details.aspx?id=5201
+MS Security Essentials | [download](https://www.microsoft.com/ru-ru/download/details.aspx?id=5201), [update](https://support.microsoft.com/ru-ru/help/971606/how-to-manually-download-the-latest-definition-updates-for-microsoft-s)
 
 ## Design/graphics
 
