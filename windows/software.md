@@ -8,6 +8,7 @@ LibreOffice         | http://ru.libreoffice.org/download/
 7-zip               | http://www.7-zip.org/download.html
 Google Chrome       | [online install](https://www.google.ru/chrome/browser/desktop/index.html), [msi](https://enterprise.google.com/intl/en_version/chrome/chrome-browser/)
 Skype               | https://www.skype.com/ru/download-skype/skype-for-computer/
+Firefox             | https://www.mozilla.org/ru/firefox/all/
 
 ## Hardware
 Name    | link
