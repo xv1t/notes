@@ -30,6 +30,12 @@ Share name | path       | write group | read only group
 -----------|------------|------------ |-----------------
 libs       | `/srv/libs`  |`srv_libs`   | `srv_libs_r`
 
+Create needed groups:
+```bash
+groupadd "srv_libs";
+groupadd "srv_libs_r";
+```
+
 Permission for `/srv/libs`
 ```bash
 chgrp srv_libs "/srv/libs"
