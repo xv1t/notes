@@ -11,9 +11,12 @@ Minimal
 ```ini
 # section in smb.conf
 [pub]
-path = /srv/pub
-public = yes
-read only = no
+path           = /srv/pub
+public         = yes
+read only      = no
+force group    = sambashare
+create mask    = 0775
+directory mask = 0775
 ```
 
 Default all new files and directories was owned by `nobody:nogroup` with default create mask `0755`
