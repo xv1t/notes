@@ -22,7 +22,7 @@ directory mask = 0775
 For guests default all new files and directories was owned by `nobody:sambashare` with default create mask `0755`.
 For login users, user own of created file or folder was `username`.
 
-# Group access
+# Share group access
 
 All new files and folders mark owned by self.
 
@@ -51,6 +51,17 @@ read only      = no
 force group    = srv_libs
 create mask    = 775
 directory mask = 0775
+```
+
+# Restrict access in the share
+Share path: `/srv/pub`
+```bash
+# create personal folders
+mkdir -p "/srv/pub/user"
+
+# set permission only for user
+chown "user1" "/srv/pub/user"
+chmod 700 "/srv/pub/user"
 ```
 
 # Add user
