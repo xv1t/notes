@@ -62,9 +62,33 @@ Samba account
 ```bash
 smbpasswd -a user1
 New password: ******
-
 ```
 
+# Add group
+```bash
+groupadd "new_samba_server_group"
+```
+
+# Add user to group
+```bash
+gpasswd -a "user1" "group1"
+```
+
+# Remove user from group
+```bash
+gpasswd -d "user1" "group1"
+```
+
+# Show members of group
+install packages `members`
+```bash
+members "group_name"
+```
+
+# Show user groups
+```bash
+groups "user1"
+```
 # Reboot samba service
 Softly
 ```bash
