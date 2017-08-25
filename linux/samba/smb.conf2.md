@@ -22,6 +22,15 @@ directory mask = 0775
 For guests default all new files and directories was owned by `nobody:sambashare` with default create mask `0755`.
 For login users, user own of created file or folder was `username`.
 
+# Public read only share
+```ini
+# section in smb.conf
+[drivers]
+path           = /srv/drivers
+public         = yes
+read only      = yes
+```
+
 # Share group access
 
 All new files and folders mark owned by self.
