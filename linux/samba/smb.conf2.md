@@ -44,11 +44,11 @@ chmod 775 "/srv/libs"
 
 ```ini
 [libs]
-path = /srv/libs
-write list = @srv_libs
-read list  = @srv_libs_r
-read only = no
-force group = srv_libs
-create mask = 775
+path           = /srv/libs
+write list     = @srv_libs
+read list      = @srv_libs_r
+read only      = no
+force group    = srv_libs
+create mask    = 775
 directory mask = 0775
 ```
