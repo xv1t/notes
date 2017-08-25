@@ -19,7 +19,8 @@ create mask    = 0775
 directory mask = 0775
 ```
 
-Default all new files and directories was owned by `nobody:nogroup` with default create mask `0755`
+For guests default all new files and directories was owned by `nobody:sambashare` with default create mask `0755`.
+For login users, user own of created file or folder was `username`.
 
 # Group access
 
