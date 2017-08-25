@@ -105,6 +105,11 @@ Alternate
 id "user1"
 ```
 
+# List samba users
+```bash
+pdbedit --list
+```
+
 # Reboot samba service
 Softly
 ```bash
