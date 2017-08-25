@@ -49,7 +49,7 @@ write list     = @srv_libs
 read list      = @srv_libs_r
 read only      = no
 force group    = srv_libs
-create mask    = 775
+create mask    = 0775
 directory mask = 0775
 ```
 
