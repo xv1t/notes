@@ -64,3 +64,15 @@ smbpasswd -a user1
 New password: ******
 
 ```
+
+# Reboot samba service
+Softly
+```bash
+service "smbd" restart;
+service "nmbd" restart;
+```
+Hardly
+```bash
+reboot
+```
+
