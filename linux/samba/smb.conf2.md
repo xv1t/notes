@@ -89,6 +89,11 @@ members "group_name"
 ```bash
 groups "user1"
 ```
+Alternate
+```bash
+id "user1"
+```
+
 # Reboot samba service
 Softly
 ```bash
