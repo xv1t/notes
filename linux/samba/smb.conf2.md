@@ -52,3 +52,15 @@ force group    = srv_libs
 create mask    = 775
 directory mask = 0775
 ```
+
+# Add user
+Unix account
+```bash
+adduser "user1"
+```
+Samba account
+```bash
+smbpasswd -a user1
+New password: ******
+
+```
