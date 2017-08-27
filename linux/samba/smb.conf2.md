@@ -116,7 +116,11 @@ id "user1"
 
 # List samba users
 ```bash
-pdbedit --list
+pdbedit -L
+```
+# Change fullname of account
+```bash
+pdbedit -u "jurist" -f "Baalov Demitry"
 ```
 
 # Reboot samba service
