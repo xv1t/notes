@@ -77,3 +77,9 @@ smbclient //smbserver/public -c "put /etc/hosts hosts" -U Administrator
 ```
 mget remotefile
 ```
+
+# Windows NT
+Add to  `/etc/samba/smb.conf`
+```ini
+client use spnego = no
+```
