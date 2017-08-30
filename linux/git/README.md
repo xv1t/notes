@@ -33,3 +33,7 @@ origin	/home/ubuntu/git/testproj.git/ (push)
 ```bash
 git checkout -- Dir/File
 ```
+
+# Links
+
+1. https://habrahabr.ru/post/336708/.com
