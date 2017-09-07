@@ -24,6 +24,6 @@ put "| (cd /srv/data0/tmp; tar c . | tee /tmp/myfile.tar.gz | gzip) " test1.tar.
 ```
 # Auto login
 `~/.netrc` with `chmod 600`
-```
+```netrc
 machine remotehost.org login username password Pas$%335fd
 ```
