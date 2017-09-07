@@ -19,7 +19,7 @@ FTP_SCRIPT
 ```
 # Copy from pipe
 in the FTP script
-```
+```bash
 put "| (cd /srv/data0/tmp; tar c . | tee /tmp/myfile.tar.gz | gzip) " test1.tar.gz
 ```
 # Auto login
