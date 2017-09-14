@@ -14,3 +14,8 @@ Find older files then week (7 days)
 ```bash
 find -type "f" -mtime "+7"
 ```
+
+## :warning: Delete all finding files
+```bash
+find -type "f" -iname "trash*" -delete
+```
