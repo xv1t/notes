@@ -32,3 +32,8 @@ Use `-delete` option
 ```bash
 find -type "f" -iname "trash*" -delete
 ```
+
+
+--------
+### links
+1. https://losst.ru/komanda-find-v-linux
