@@ -30,3 +30,12 @@ mdadm -w /dev/md127
 [29037.803924] md: md126 switched to read-write mode.
 [29048.204324] md: md127 switched to read-write mode.
 ```
+
+# metadata
+mdadm /dev/md128 --create --level=1 --raid-devices=2 /dev/sdc3 /dev/sdd3
+mdadm: Note: this array has metadata at the start and
+    may not be suitable as a boot device.  If you plan to
+    store '/boot' on this device please ensure that
+    your boot-loader understands md/v1.x metadata, or use
+    --metadata=0.90
+Continue creating array?
