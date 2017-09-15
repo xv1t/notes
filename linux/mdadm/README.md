@@ -25,3 +25,8 @@ For `writing` mode
 mdadm -w /dev/md126
 mdadm -w /dev/md127
 ```
+`dmesg`
+```
+[29037.803924] md: md126 switched to read-write mode.
+[29048.204324] md: md127 switched to read-write mode.
+```
