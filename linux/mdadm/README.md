@@ -6,3 +6,22 @@ After the change of the raid array, you need manually update `/etc/mdadm/mdadm.c
 ```bash
 mdadm --detail --scan > /etc/mdadm/mdadm.conf
 ```
+
+#  (auto-read-only) status
+```bash
+cat /proc/mdstat 
+Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10] 
+
+md126 : active (auto-read-only) raid1 sdd1[1] sdc1[0]
+      19514368 blocks super 1.2 [2/2] [UU]
+      
+md127 : active (auto-read-only) raid1 sdd2[1] sdc2[0]
+      3904512 blocks super 1.2 [2/2] [UU]
+      
+unused devices: <none>
+```
+For `writing` mode
+```bash
+mdadm -w /dev/md126
+mdadm -w /dev/md127
+```
