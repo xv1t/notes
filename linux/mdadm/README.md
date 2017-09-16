@@ -32,10 +32,12 @@ mdadm -w /dev/md127
 ```
 
 # metadata
-mdadm /dev/md128 --create --level=1 --raid-devices=2 /dev/sdc3 /dev/sdd3
+
+```mdadm /dev/md128 --create --level=1 --raid-devices=2 /dev/sdc3 /dev/sdd3
 mdadm: Note: this array has metadata at the start and
     may not be suitable as a boot device.  If you plan to
     store '/boot' on this device please ensure that
     your boot-loader understands md/v1.x metadata, or use
     --metadata=0.90
 Continue creating array?
+```
