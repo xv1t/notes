@@ -11,7 +11,7 @@ Separate data:
 3. System files (databases)
 
 ## 1. Virtual machine files
-All folders withous user data `/srv`
+All folders without user data: `/srv`, `/home`
 ```
 drwxr-xr-x  2 root root  4096 май 23  2016 bin
 drwxr-xr-x  2 root root  4096 апр 11  2014 boot
