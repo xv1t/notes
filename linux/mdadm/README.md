@@ -30,6 +30,21 @@ mdadm -w /dev/md127
 [29037.803924] md: md126 switched to read-write mode.
 [29048.204324] md: md127 switched to read-write mode.
 ```
+# destroy md partition
+```bash
+    %# umount /dev/md0
+    %# mdadm -S /dev/md0
+```
+Затем необходимо затереть superblock каждого из составляющих массива:
+```bash
+%# mdadm --zero-superblock /dev/hde1
+    %# mdadm --zero-superblock /dev/hdf2
+```
+Если действие выше не помогло, то затираем так:
+```bash
+%# dd if=/dev/zero of=/dev/hde1 bs=512 count=1
+%# dd if=/dev/zero of=/dev/hdf2 bs=512 count=1
+```    
 
 # metadata
 
