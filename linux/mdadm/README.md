@@ -30,6 +30,12 @@ mdadm -w /dev/md127
 [29037.803924] md: md126 switched to read-write mode.
 [29048.204324] md: md127 switched to read-write mode.
 ```
+
+# create md 
+```
+mdadm --create --verbose /dev/md0 --level=1  --raid-devices=1 /dev/sda1 /dev/sdb1
+```
+
 # destroy md partition
 ```bash
     %# umount /dev/md0
