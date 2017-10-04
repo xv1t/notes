@@ -6,7 +6,7 @@
 
 
 # /etc/vsftpd.conf
-Quick simple configuration
+Quick simple configuration in `Ubuntu Xenial`
 ```ini
 listen=YES
 listen_ipv6=NO
