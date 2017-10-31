@@ -33,3 +33,20 @@ I/O size (minimum/optimal): 4096 bytes / 4096 bytes
 /dev/sdb3    33202176 3229261823 3196059648  1,5T Linux RAID
 /dev/sdb4  3229261824 5860533134 2631271311  1,2T Linux RAID
 ```
+
+`cat /proc/mdstat`
+```
+md0 : active raid1 sda1[0] sdb1[1]
+      14639104 blocks super 1.2 [2/2] [UU]
+      
+md2 : active raid1 sda3[0] sdb3[2]
+      1597898752 blocks super 1.2 [2/2] [UU]
+      bitmap: 0/12 pages [0KB], 65536KB chunk
+
+md1 : active raid1 sda2[0] sdb2[1]
+      1951744 blocks super 1.2 [2/2] [UU]
+      
+md3 : active raid1 sda4[0] sdb4[2]
+      1315504576 blocks super 1.2 [2/2] [UU]
+      bitmap: 0/10 pages [0KB], 65536KB chunk
+```
