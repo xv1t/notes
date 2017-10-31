@@ -33,7 +33,7 @@ mdadm -w /dev/md127
 
 # create md 
 ```
-mdadm --create --verbose /dev/md0 --level=1  --raid-devices=1 /dev/sda1 /dev/sdb1
+mdadm --create --verbose /dev/md0 --level=1  --raid-devices=2 /dev/sda1 /dev/sdb1
 ```
 
 # destroy md partition
