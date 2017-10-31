@@ -11,7 +11,7 @@ I/O size (minimum/optimal): 4096 bytes / 4096 bytes
 Тип метки диска: gpt
 Идентификатор диска: 4442470C-E8E9-411F-8873-5A6DE9D96FCE
 
-Устр-во         Start Конец Секторы  Size Тип
+Устр-во         Start      Конец    Секторы  Size Тип
 /dev/sda1        2048   29296639   29294592   14G BIOS boot
 /dev/sda2    29296640   33202175    3905536  1,9G Linux RAID
 /dev/sda3    33202176 3229261823 3196059648  1,5T Linux RAID
@@ -27,7 +27,7 @@ I/O size (minimum/optimal): 4096 bytes / 4096 bytes
 Тип метки диска: gpt
 Идентификатор диска: B7E62D5D-02AA-418F-97E2-9CECF1E78D26
 
-Устр-во         Start Конец Секторы  Size Тип
+Устр-во         Start      Конец    Секторы  Size Тип
 /dev/sdb1        2048   29296639   29294592   14G BIOS boot
 /dev/sdb2    29296640   33202175    3905536  1,9G Linux RAID
 /dev/sdb3    33202176 3229261823 3196059648  1,5T Linux RAID
