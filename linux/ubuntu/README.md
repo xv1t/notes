@@ -45,7 +45,7 @@ linux-image-4.4.0-96-lowlatency
 linux-image-4.4.0-97-lowlatency
 linux-image-4.4.0-98-lowlatency
 ```
-get one 
+get one line
 ```bash
 dpkg -l                                \
   | grep "linux-image"                  \
@@ -71,12 +71,29 @@ dpkg -l \
   | grep -v `uname -a | awk '{print $3}'`\
   | grep -v "linux-headers-lowlatency"
 ```
-returns old headers packages
+returns old headers packages list
 ```
 linux-headers-4.4.0-101
 linux-headers-4.4.0-97
 linux-headers-4.4.0-97-lowlatency
 linux-headers-4.4.0-98
 linux-headers-4.4.0-98-lowlatency
+```
+And after `xargs`
+```bash
+dpkg -l                               \
+  | grep "linux-headers"               \
+  | awk '{print $2}'                    \
+  | grep -v `uname -a | awk '{print $3}'`\
+  | grep -v "linux-headers-lowlatency"    \
+  | xargs
+```
+Returns
+
+`linux-headers-4.4.0-101 linux-headers-4.4.0-97 linux-headers-4.4.0-97-lowlatency linux-headers-4.4.0-98 linux-headers-4.4.0-98-lowlatency`
+
+And put this package list into
+```bash
+sudo apt remove <...>
 ```
 
