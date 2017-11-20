@@ -16,7 +16,7 @@ dpkg -l             \
   | grep -v `uname -a | awk '{print $3}'`   \
   | grep -v "linux-image-lowlatency"
 ```
-return
+return old image packages
 ```
 linux-image-4.4.0-31-lowlatency
 linux-image-4.4.0-38-lowlatency
@@ -53,7 +53,7 @@ dpkg -l \
   | grep -v `uname -a | awk '{print $3}'`\
   | grep -v "linux-headers-lowlatency"
 ```
-returns
+returns old headers packages
 ```
 linux-headers-4.4.0-101
 linux-headers-4.4.0-97
