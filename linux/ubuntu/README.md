@@ -65,6 +65,7 @@ And insert this big line into
 ```bash
 sudo apt remove `#here`
 ```
+And delete about 500MB
 
 ## linux-headers
 ```bash
@@ -99,4 +100,5 @@ And put this package list into
 ```bash
 sudo apt remove <...>
 ```
+Deleting about 250MB
 
