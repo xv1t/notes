@@ -8,6 +8,9 @@ Linux rec 4.4.0-101-lowlatency #124-Ubuntu SMP PREEMPT Fri Nov 10 19:25:08 UTC 2
 ```
 Linux kernel is a `4.4.0-101-lowlatency`
 
+## First reboot!
+Please reboot
+
 ## Linux image
 ```bash
 dpkg -l                                \
