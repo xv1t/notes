@@ -10,10 +10,10 @@ Linux kernel is a `4.4.0-101-lowlatency`
 
 ## Linux image
 ```bash
-dpkg -l             \
-  | grep "linux-image" \
-  | awk '{print $2}'  \
-  | grep -v `uname -a | awk '{print $3}'`   \
+dpkg -l                                \
+  | grep "linux-image"                  \
+  | awk '{print $2}'                     \
+  | grep -v `uname -a | awk '{print $3}'` \
   | grep -v "linux-image-lowlatency"
 ```
 return old image packages
@@ -45,6 +45,24 @@ linux-image-4.4.0-96-lowlatency
 linux-image-4.4.0-97-lowlatency
 linux-image-4.4.0-98-lowlatency
 ```
+get one 
+```bash
+dpkg -l                                \
+  | grep "linux-image"                  \
+  | awk '{print $2}'                     \
+  | grep -v `uname -a | awk '{print $3}'` \
+  | grep -v "linux-image-lowlatency"       \
+  | xargs
+```
+return
+
+`linux-image-4.4.0-31-lowlatency linux-image-4.4.0-38-lowlatency linux-image-4.4.0-43-lowlatency linux-image-4.4.0-45-lowlatency linux-image-4.4.0-47-lowlatency linux-image-4.4.0-51-lowlatency linux-image-4.4.0-53-lowlatency linux-image-4.4.0-57-lowlatency linux-image-4.4.0-59-lowlatency linux-image-4.4.0-62-lowlatency linux-image-4.4.0-64-lowlatency linux-image-4.4.0-66-lowlatency linux-image-4.4.0-71-lowlatency linux-image-4.4.0-72-lowlatency linux-image-4.4.0-75-lowlatency linux-image-4.4.0-77-lowlatency linux-image-4.4.0-78-lowlatency linux-image-4.4.0-79-lowlatency linux-image-4.4.0-81-lowlatency linux-image-4.4.0-83-lowlatency linux-image-4.4.0-87-lowlatency linux-image-4.4.0-92-lowlatency linux-image-4.4.0-93-lowlatency linux-image-4.4.0-96-lowlatency linux-image-4.4.0-97-lowlatency linux-image-4.4.0-98-lowlatency`
+
+And insert this big line into
+```bash
+sudo apt remove `#here`
+```
+
 ## linux-headers
 ```bash
 dpkg -l \
@@ -61,3 +79,4 @@ linux-headers-4.4.0-97-lowlatency
 linux-headers-4.4.0-98
 linux-headers-4.4.0-98-lowlatency
 ```
+
