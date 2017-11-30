@@ -23,7 +23,7 @@ x11vnc -dontdisconnect           \
 	-rfbport $VNC_PORT -bg       \
 	-o /var/log/x11vnc.log        \	
 	-auth /var/run/lightdm/root/:0 \
-	-rfbauth /etc/lightdm/.vncpasswd
+	-rfbauth /etc/lightdm/.vncpasswd;
 ```
 
 Check port fo x11vnc
