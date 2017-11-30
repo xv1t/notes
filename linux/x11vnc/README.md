@@ -1,4 +1,7 @@
 # x11vnc Ubuntu 16 lightdm autostart
+
+Make password file
+
 ```bash
 x11vnc -storepassw /etc/lightdm/.vncpasswd
 ```
@@ -13,12 +16,13 @@ Write script `/etc/lightdm/x11vnc.sh`
 
 VNC_PORT=29761
 
-x11vnc -dontdisconnect \
-	-display :0 \
+x11vnc -dontdisconnect           \
+	-display :0               \	
+	-notruecolor -noxfixes     \ 
+	-shared -forever            \
+	-rfbport $VNC_PORT -bg       \
+	-o /var/log/x11vnc.log        \	
 	-auth /var/run/lightdm/root/:0 \
-	-notruecolor -noxfixes -shared -forever \
-	-rfbport $VNC_PORT -bg \
-	-o /var/log/x11vnc.log \
 	-rfbauth /etc/lightdm/.vncpasswd
 ```
 
