@@ -1,10 +1,10 @@
-# Ubuntu 16 lightdm
+# x11vnc Ubuntu 16 lightdm autostart
 ```bash
 x11vnc -storepassw /etc/lightdm/.vncpasswd
 ```
 Write file `/etc/lightdm/lightdm.conf`
 ```ini
-[SeatDefaults]                                                                                                            
+[SeatDefaults]
   greeter-setup-script=/etc/lightdm/x11vnc.sh
 ```
 Write script `/etc/lightdm/x11vnc.sh`
