@@ -14,7 +14,7 @@ Write script `/etc/lightdm/x11vnc.sh`
 ```bash
 #!/bin/bash
 
-VNC_PORT=29761
+VNC_PORT="29761"
 
 x11vnc -dontdisconnect           \
 	-display :0               \	
