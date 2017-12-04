@@ -29,3 +29,6 @@ Name        | link
 Inkscape    |https://inkscape.org/ru/download/windows/
 GIMP        |https://www.gimp.org/downloads/
 irfan       |http://www.irfanview.com/
+
+## SFTP/SSH mount
+http://www.sftpnetdrive.com/
