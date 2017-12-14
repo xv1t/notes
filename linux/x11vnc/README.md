@@ -16,14 +16,19 @@ Write script `/etc/lightdm/x11vnc.sh`
 
 VNC_PORT="29761"
 
-x11vnc -dontdisconnect           \
-	-display :0               \	
-	-notruecolor -noxfixes     \ 
-	-shared -forever            \
-	-rfbport $VNC_PORT -bg       \
-	-o /var/log/x11vnc.log        \	
-	-auth /var/run/lightdm/root/:0 \
-	-rfbauth /etc/lightdm/.vncpasswd;
+x11vnc 	                          \
+	-dontdisconnect            \
+	-display :0                 \
+	-notruecolor -noxfixes       \
+	-shared -forever              \
+	-rfbport $VNC_PORT -bg         \
+	-o "/var/log/x11vnc.log"        \
+	-auth "/var/run/lightdm/root/:0" \
+	-rfbauth "/etc/lightdm/.vncpasswd";
+```
+Make executable
+```bash
+chmod +x "/etc/lightdm/x11vnc.sh"
 ```
 
 Check port fo x11vnc
