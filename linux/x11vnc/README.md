@@ -3,7 +3,7 @@
 Make password file
 
 ```bash
-x11vnc -storepasswd /etc/lightdm/.vncpasswd
+x11vnc -storepasswd "/etc/lightdm/.vncpasswd"
 ```
 Write file `/etc/lightdm/lightdm.conf`
 ```ini
