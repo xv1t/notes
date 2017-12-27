@@ -1,3 +1,4 @@
+![](https://code.visualstudio.com/assets/blogs/2017/10/24/blueicon.png)
 # PHP develope extensions
 - Close HTML/XML tag
 - ESLint
