@@ -18,7 +18,7 @@ dpkg -l                                \
   | awk '{print $2}'                     \
   | grep -v `uname -a | awk '{print $3}'` \
   | grep -v "linux-image-lowlatency"       \
-  | grep -v "linux-image-generic"           \
+  | grep -v "linux-image-generic"           
   
 ```
 return old image packages
@@ -71,11 +71,12 @@ And delete about 500MB
 
 ## linux-headers
 ```bash
-dpkg -l \
-  | grep "linux-headers" \
-  | awk '{print $2}' \
+dpkg -l                               \
+  | grep "linux-headers"               \
+  | awk '{print $2}'                    \
   | grep -v `uname -a | awk '{print $3}'`\
-  | grep -v "linux-headers-lowlatency"
+  | grep -v "linux-headers-lowlatency"    \
+  | grep -v "linux-headers-generic"
 ```
 returns old headers packages list
 ```
@@ -92,6 +93,7 @@ dpkg -l                               \
   | awk '{print $2}'                    \
   | grep -v `uname -a | awk '{print $3}'`\
   | grep -v "linux-headers-lowlatency"    \
+  | grep -v "linux-headers-generic"        \
   | xargs
 ```
 Returns
