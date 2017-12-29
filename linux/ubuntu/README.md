@@ -17,7 +17,9 @@ dpkg -l                                \
   | grep "linux-image"                  \
   | awk '{print $2}'                     \
   | grep -v `uname -a | awk '{print $3}'` \
-  | grep -v "linux-image-lowlatency"
+  | grep -v "linux-image-lowlatency"       \
+  | grep -v "linux-image-generic"           \
+  
 ```
 return old image packages
 ```
