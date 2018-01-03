@@ -45,11 +45,11 @@ server {
         }
 }
 ```
-By server name
+By server name, CakePHP3, `/etc/nginx/sites-enabled/cake3.conf`
 ```conf
 server {
         listen          80;
-        server_name     web05.lxc.net web05;
+        server_name     cake3.web05.lxc.net;
         root            /var/www/cakephp3/apptest/webroot;
         index           index.php;
         location / {
@@ -64,6 +64,28 @@ server {
                 fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         }
 }
-
 ```
+
+CakePHP2, `/etc/nginx/sites-enabled/cake2.conf`
+```
+server {
+        listen          80;
+        server_name     cake2.web05.lxc.net;
+        root            /var/www/cakephp2/cakephp-2.10.6/app/webroot;
+        index           index.php;
+        location / {
+                try_files $uri $uri/ /index.php?$args;
+        }
+        location ~ \.php$ {
+                try_files $uri =404;
+                include fastcgi_params;
+                fastcgi_pass 127.0.0.1:9000;
+                fastcgi_index index.php;
+                fastcgi_intercept_errors on;
+                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        }
+}
+```
+
+
 
