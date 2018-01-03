@@ -1,4 +1,7 @@
 # CakePHP 3.0 on NGINX
+
+https://book.cakephp.org/3.0/en/installation.html#nginx
+
 Ubuntu packages
 ```bash
 sudo apt install       \
@@ -41,5 +44,26 @@ server {
                 fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         }
 }
+```
+By server name
+```conf
+server {
+        listen          80;
+        server_name     web05.lxc.net web05;
+        root            /var/www/cakephp3/apptest/webroot;
+        index           index.php;
+        location / {
+                try_files $uri $uri/ /index.php?$args;
+        }
+        location ~ \.php$ {
+                try_files $uri =404;
+                include fastcgi_params;
+                fastcgi_pass 127.0.0.1:9000;
+                fastcgi_index index.php;
+                fastcgi_intercept_errors on;
+                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        }
+}
+
 ```
 
