@@ -28,7 +28,7 @@ listen = localhost:9000
 ```
 ## NGINX virtual server config
 Standalone individual port 8080
-```
+```nginx
 server {
         listen  8080;
         root    /var/www/cakephp3/apptest/webroot;
@@ -47,7 +47,7 @@ server {
 }
 ```
 By server name, CakePHP3, `/etc/nginx/sites-enabled/cake3.conf`
-```conf
+```nginx
 server {
         listen          80;
         server_name     cake3.web05.lxc.net;
@@ -68,7 +68,7 @@ server {
 ```
 
 CakePHP2, `/etc/nginx/sites-enabled/cake2.conf`
-```
+```nginx
 server {
         listen          80;
         server_name     cake2.web05.lxc.net;
@@ -110,7 +110,7 @@ fastcgi_pass unix:/run/php/php7.0-fpm.sock;
 
 Full config fo `CakePHP3`
 
-```
+```nginx
 server {
         listen          80;
         server_name     cake3.web05.lxc.net;
@@ -132,7 +132,7 @@ server {
 ```
 
 Full config for `CakePHP2`
-```
+```nginx
 server {
         listen          80;
         server_name     cake2.web05.lxc.net;
