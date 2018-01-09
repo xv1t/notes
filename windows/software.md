@@ -20,7 +20,7 @@ Name    | link
 ## Optimization
 Name                    | link
 ------------------------|-----------------------------------------
-CCleaner                | http://www.piriform.com/ccleaner/download
+CCleaner                | [installation](http://www.piriform.com/ccleaner/download) [portable](http://www.piriform.com/CCleaner/download/portable)
 
 ## Antivirus
 Name                   | Link
