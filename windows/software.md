@@ -16,6 +16,11 @@ Name    | link
 --------|----------------------------------------------
  HWiNFO | https://www.hwinfo.com/download.php
  CPUz   | http://www.cpuid.com/softwares/cpu-z.html
+ 
+## Optimization
+Name                    | link
+------------------------|-----------------------------------------
+CCleaner                | http://www.piriform.com/ccleaner/download
 
 ## Antivirus
 Name                   | Link
