@@ -27,6 +27,11 @@ Name                   | Link
 -----------------------|--------------------------------------------------------------
 MS Security Essentials | [download](https://www.microsoft.com/ru-ru/download/details.aspx?id=5201), [update](https://support.microsoft.com/ru-ru/help/971606/how-to-manually-download-the-latest-definition-updates-for-microsoft-s)
 
+## Backup tools
+Name          | Link
+--------------|-------------------------------------------
+Cobian Backup | http://www.cobiansoft.com/cobianbackup.htm
+
 ## Design/graphics
 
 Name        | link
