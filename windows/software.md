@@ -21,6 +21,7 @@ Name    | link
 Name                    | link
 ------------------------|-----------------------------------------
 CCleaner                | [installation](http://www.piriform.com/ccleaner/download) [portable](http://www.piriform.com/CCleaner/download/portable)
+WinDirStat              | https://windirstat.net/download.html
 
 ## Antivirus
 Name                   | Link
