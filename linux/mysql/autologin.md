@@ -9,6 +9,6 @@ database="mydb1"
 
 And run
 ```bash
-mysql -hserver2
+mysql -h "server2"
 ```
 without logn/password prompt
