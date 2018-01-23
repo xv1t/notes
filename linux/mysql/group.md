@@ -2,8 +2,9 @@ Example error for `group`
 
 **Database Error**
 
-Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #93 of 
-`SELECT` list is not in GROUP BY clause and contains nonaggregated column *******.id' 
+Error: SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #93 of
+
+`SELECT` list is not in GROUP BY clause and contains nonaggregated column `*******.id`
 which is not functionally dependent on columns in `GROUP BY` clause; this is incompatible with **sql_mode=only_full_group_by**
 
 В файле `/etc/mysql/mysql.conf.d/mysqld.cnf` добавлена опция `sql_mode`
