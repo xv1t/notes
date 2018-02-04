@@ -37,6 +37,7 @@ group by
 	table_type;
 ```
 out example
+
 table_type | count
 -----------|------
 BASE TABLE | 90
