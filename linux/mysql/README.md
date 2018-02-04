@@ -1,4 +1,4 @@
-# Get object from database
+# Get tables/views from database
 ## Tables
 ```sql
 select
@@ -24,3 +24,20 @@ where
 SHOW PROCEDURE STATUS;
 SHOW FUNCTION STATUS;
 ```
+
+## Show grouping statistic for all object
+```sql
+select
+	table_type,
+    count(*) `count`
+from information_schema.tables
+where 
+	table_schema LIKE 'iodoc'
+group by 
+	table_type;
+```
+out example
+table_type | count
+-----------|------
+BASE TABLE | 90
+VIEW       | 43
