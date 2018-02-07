@@ -11,6 +11,7 @@ server {
 
         keepalive_timeout 70;
 
+    # many subdomains
     server_name         unit*.domain.ru  test*.domain.ru ;
     root                /var/www/apps/cake2/iodoc/app/webroot;
     index               index.php;
