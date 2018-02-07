@@ -36,7 +36,6 @@ server {
         fastcgi_param   SSL_VERIFIED $ssl_client_verify;
         fastcgi_param   SSL_CLIENT_SERIAL $ssl_client_serial;
         fastcgi_param   SSL_CLIENT_DN   $ssl_client_i_dn;
-        #fastcgi_param  SSL_CLIENT_DN_LEGACY $ssl_client_i_dn_legacy;
         fastcgi_param   SSL_DN          $ssl_client_s_dn;
 
         fastcgi_index index.php; 
