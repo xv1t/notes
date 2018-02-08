@@ -10,6 +10,6 @@ GRANT ALL ON `mydb`.* TO `username`@localhost IDENTIFIED BY 'password';
 ```
 
 # Create account for database
-```
+```sql
 GRANT ALL ON `mydb`.* TO `username`@localhost IDENTIFIED BY 'password';
 ```
