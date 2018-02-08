@@ -1,11 +1,11 @@
 ![](https://linuxcontainers.org/static/img/containers.png)
 # lxc.conf
 ## Mount host dir
-###Readonly
+### Readonly
 ```
 lxc.mount.entry=/tmp mnt/tmp none bind,ro 0 0
 ```
-###read write
+### read write
 ```
 lxc.mount.entry=/var/tmp mnt/tmp2 none bind 0 0
 ```
