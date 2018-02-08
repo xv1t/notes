@@ -42,3 +42,8 @@ table_type | count
 -----------|------
 BASE TABLE | 90
 VIEW       | 43
+
+# Create database with UTF-8
+```sql
+CREATE DATABASE `iodoc` /*!40100 DEFAULT CHARACTER SET utf8 */;
+```
