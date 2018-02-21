@@ -1,4 +1,5 @@
-# Prepare packages
+# CakePHP3 install
+## Prepare packages
 
 Install php
 ```bash
@@ -10,7 +11,7 @@ Install composer
 sudo apt install composer
 ```
 
-# Create project
+## Create project
 Project name example: `project1`
 Create dir
 ```bash
