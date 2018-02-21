@@ -18,13 +18,13 @@ Create dir
 sudo mkdir -p /var/www/apps/
 
 # Change own folder for current user
-sudo chown $USER /var/www/apps/
+sudo chown $USER "/var/www/apps/"
 
 # go to folder
 cd "/var/www/apps/project1"
 
 # Create project home folder
-composer create-project --prefer-dist cakephp/app project1
+composer create-project --prefer-dist cakephp/app "project1"
 ```
 
 ## Update all
