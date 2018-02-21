@@ -27,7 +27,7 @@ cd "/var/www/apps/project1"
 composer create-project --prefer-dist cakephp/app project1
 ```
 
-Update all
+## Update all
 ```bash
 cd  "/var/www/apps/project1"
 composer update
