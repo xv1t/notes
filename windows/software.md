@@ -35,11 +35,12 @@ Cobian Backup | http://www.cobiansoft.com/cobianbackup.htm
 
 ## Design/graphics
 
-Name        | link
-------------|-------------------------------------------
-Inkscape    |https://inkscape.org/ru/download/windows/
+Name        | link                                      | about
+------------|-------------------------------------------|------
+Inkscape    |https://inkscape.org/ru/download/windows/  
 GIMP        |https://www.gimp.org/downloads/
 irfan       |http://www.irfanview.com/
+LightShot   |https://app.prntscr.com/ru/index.html      |Самый быстрый и удобный способ сделать скриншот
 
 ## SFTP/SSH mount
 http://www.sftpnetdrive.com/
