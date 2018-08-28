@@ -47,3 +47,7 @@ gpasswd -a "user1" "backup"
 ```bash
 gpasswd -d "user1" "backup"
 ```
+## Apply group
+```bash
+newgrp GROUP_NAME
+```
