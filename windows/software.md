@@ -42,5 +42,8 @@ GIMP        |https://www.gimp.org/downloads/
 irfan       |http://www.irfanview.com/
 LightShot   |https://app.prntscr.com/ru/index.html      |Самый быстрый и удобный способ сделать скриншот
 
-## SFTP/SSH mount
-http://www.sftpnetdrive.com/
+## Network
+Name                | link                                    | about
+--------------------|-----------------------------------------|-----------------------------------
+SFTP Net Drive      | http://www.sftpnetdrive.com/            | SFTP/SSH mount as network drive
+Advanced IP Scanner | http://www.advanced-ip-scanner.com/ru/  | Надежный и бесплатный сетевой сканер для анализа локальных сетей
