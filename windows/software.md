@@ -26,8 +26,8 @@ WinDirStat              | https://windirstat.net/download.html
 ## Productivity
 Name              | link                                                      |Notes
 ------------------|-----------------------------------------------------------|------------
-Gantt Project     | https://www.ganttproject.biz/download
-yEd Graph Editor  | https://www.yworks.com/products/yed/download#download     |need Java
+Gantt Project     | https://www.ganttproject.biz/download                     | [x] Java
+yEd Graph Editor  | https://www.yworks.com/products/yed/download#download     | [x] Java
 
 ## Develope
 Name              | link
