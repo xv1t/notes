@@ -23,9 +23,24 @@ Name                    | link
 CCleaner                | [installation](http://www.piriform.com/ccleaner/download) [portable](http://www.piriform.com/CCleaner/download/portable)
 WinDirStat              | https://windirstat.net/download.html
 
+## Productivity
+Name              | link                                                      |Notes
+------------------|-----------------------------------------------------------|------------
+Gantt Project     | https://www.ganttproject.biz/download
+yEd Graph Editor  | https://www.yworks.com/products/yed/download#download     |need Java
+
+## Develope
+Name              | link
+------------------|--------------
+Java JRE          | [Download](https://www.oracle.com/technetwork/java/javase/downloads/2133155)
+Java JDK          | [Download](https://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html)
+Netbeans          | https://netbeans.org/downloads/index.html
+Notepad++         | https://notepad-plus-plus.org/download/
+
 ## Antivirus
 Name                   | Link
 -----------------------|--------------------------------------------------------------
+Kaspersky Free         | https://support.kaspersky.ru/kfa
 MS Security Essentials | [download](https://www.microsoft.com/ru-ru/download/details.aspx?id=5201), [update](https://support.microsoft.com/ru-ru/help/971606/how-to-manually-download-the-latest-definition-updates-for-microsoft-s)
 
 ## Backup tools
