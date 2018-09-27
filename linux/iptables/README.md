@@ -9,6 +9,11 @@ for table in "nat" "filter" "mangle"; do
   iptables -t $table -X
 done
 ```
+## Show all rules
+```bash
+iptables -L -n -x -v 
+```
+
 ## Variables idioms
 ```bash
 IPTABLES="/sbin/iptables"
