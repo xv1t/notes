@@ -29,6 +29,22 @@ mail.warn                       -/var/log/mail.warn
 mail.err                        /var/log/mail.err
 ####------------- cut
 ```
+## /etc/logrotate.d/dovecot
+```
+/var/log/dovecot*.log
+{
+        rotate 14
+        missingok
+        notifempty
+        compress
+        delaycompress
+        postrotate
+          doveadm log reopen
+        endscript
+        daily
+}
+```
+
 # Restart 
 ```bash
 dovecot reload
