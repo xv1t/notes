@@ -37,6 +37,11 @@ Java JDK          | [Download](https://www.oracle.com/technetwork/java/javase/do
 Netbeans          | https://netbeans.org/downloads/index.html
 Notepad++         | https://notepad-plus-plus.org/download/
 
+## Analyze
+Name    | link
+--------|-------
+Process Hacker | https://github.com/processhacker/processhacker
+
 ## Antivirus
 Name                   | Link
 -----------------------|--------------------------------------------------------------
