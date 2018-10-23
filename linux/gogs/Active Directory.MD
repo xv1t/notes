@@ -1,4 +1,4 @@
-# Active directory auth
+# GOGS - Active directory auth
 
 Create groups in the `Users` container in your Active Directory of domain `DOMAINNAME`
 1. GogsUsers
