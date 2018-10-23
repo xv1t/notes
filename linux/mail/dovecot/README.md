@@ -3,9 +3,9 @@
 doveadm who
 ```
 
-Show from lan network 10.102.0.0/16
+Show from lan network 10.10.0.0/16
 ```bash
-doveadm who 10.102/16
+doveadm who 10.10/16
 ```
 
 Show by filter mailbox name
