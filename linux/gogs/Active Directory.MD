@@ -4,7 +4,9 @@ Create groups in the `Users` container in your Active Directory of domain `DOMAI
 1. GogsUsers
 2. GogsAdmins
 
-Create account `gogs` with password `X*******U` with minimal privileges
+Create account `gogs` with password `X*******U` with minimal privileges, also in the `Users` container
+
+`Admin Panel` -> `Authentication` -> `Add New Source`
 
 ```yaml
 Authentication Setting:
