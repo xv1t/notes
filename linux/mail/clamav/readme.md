@@ -10,3 +10,10 @@ and more...
 ```bash
 service restart "clamav-daemon"
 ```
+
+example mail.log with `status=VIRUS`
+```
+Nov 20 13:19:32 mail clamsmtpd: 1308A0: from=info@coach-us.de, to=latipov.d@rain.ru, status=VIRUS:rules_block_Zip_js.UNOFFICIAL
+Nov 20 13:23:34 mail clamsmtpd: 1308D2: from=alex@alexproehl.com, to=musagotova.f@rain.ru, status=VIRUS:rules_block_Zip_js.UNOFFICIAL
+Nov 20 13:24:50 mail clamsmtpd: 1308DB: from=jamie@thehighcam.com, to=vetrova.v@rain.ru, status=VIRUS:rules_block_Zip_js.UNOFFICIAL
+```
