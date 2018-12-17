@@ -1,13 +1,13 @@
 # Lang   : PowerShell 4.0 script
 # Title  : Получения отчета CSV о действительных пользователях AD 
-# ver    : 14.08.2018
+# ver    : 17.12.2018
 # Comment: При запуске на основном контроллере требуется повышен привелегий скрипта
 
 "Start AD query..."
 
 $users = get-aduser `
     -Filter {(enabled -eq $true) -and (samAccountName -like "*") -and (samAccountName -notLike "*$") } `
-    -Property name, description, distinguishedName, lastLogonDate, created, emailAddress, GivenName, memberOf
+    -Property name, description, distinguishedName, lastLogonDate, created, emailAddress, GivenName, memberOf, POBox
 
 #Дата - три месяца назад
 $laterDate = (Get-Date).AddMonths(-3)
@@ -63,6 +63,7 @@ $users1 = foreach($U in $users){
         description       = $u.Description;
         distinguishedName = $u.distinguishedName;
         lastLogonDate     = $U.LastLogonDate;
+        POBox             = $u.POBox;
 
         #Проверка последнего входа, не позднее 3х месяцев, то True
         НеВходил3месяца     = $U.LastLogonDate -le $laterDate; 
