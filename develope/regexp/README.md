@@ -14,7 +14,7 @@ online testing [regexp](https://regex101.com/)
 ^startword
 ```
 
-# end of string
+# end of string `$`
 ```regexp
 ending$
 ```
