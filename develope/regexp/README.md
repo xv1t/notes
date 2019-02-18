@@ -48,3 +48,22 @@ result
 info-map@server.one.net
 info763@makler.net
 ```
+# invert 
+Select all, but not `.ru` and `.com`
+```regexp
+^(?:(?!(\.(ru|com))$).)+$
+```
+strings
+```
+mail@com.ru
+meta@moltex.com
+userfdg@gmail.com
+info@don.com
+curabier@nord.nl
+more@bork.net
+```
+result
+```
+curabier@nord.nl
+more@bork.net
+```
