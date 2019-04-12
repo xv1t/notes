@@ -11,3 +11,8 @@ class UsersController extends AppController{
   
 }
 ```
+
+## $this in the ctp file
+```php
+/* @var $this View */
+```
