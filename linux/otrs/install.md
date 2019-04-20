@@ -42,7 +42,8 @@ wget "https://github.com/OTRS/otrs/archive/rel-6_0_18.tar.gz"
 ## IMAP
 
 ## SMTP
-Set options, for example for
+go to utl `/otrs/index.pl?Action=AdminSystemConfiguration`
+Set options, for example for yandex.ru
 
 Option                  | Value
 ------------------------|----------
@@ -51,6 +52,7 @@ NotificationSenderEmail | otrs-email@yandex.ru
 SendmailModule::AuthPassword  | ********
 SendmailModule::AuthUser | otrs-email@yandex.ru
 SendmailModule::Host | smtp.yandex.ru
+SendmailModule::Port | 465
 SendmailNotificationEnvelopeFrom | otrs-email@yandex.ru
 
 
