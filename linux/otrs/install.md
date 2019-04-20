@@ -10,8 +10,14 @@ sudo apt "install" -y \
       libxml-libxml-perl libxml-libxslt-perl libyaml-perl \
       libarchive-zip-perl libcrypt-eksblowfish-perl libencode-hanextra-perl \
       libmail-imapclient-perl libtemplate-perl libdatetime-perl \
-      libdbd-odbc-perl libdbd-pg-perl libauthen-ntlm-perl cron sendmail;
+      libdbd-odbc-perl libdbd-pg-perl libauthen-ntlm-perl cron sendmail wget;
 ```
+## Install MySQL server
+```bash
+sudo apt install mysql-server
+```
+Add A config to
+
 ## Add account
 ```bash
 sudo useradd "otrs" -d "/opt/otrs/" -G "www-data" -c "OTRS User";
@@ -22,5 +28,11 @@ sudo apt-get -y autoremove && \
 sudo apt-get -y clean && \
 sudo rm -rf /var/lib/apt/lists/*
 ```
-
+## Download otrs
+Go to https://github.com/OTRS/otrs/releases
+For example download a `rel-6_0_18`
+```bash
+cd /tmp
+wget https://github.com/OTRS/otrs/archive/rel-6_0_18.tar.gz
+```
 
