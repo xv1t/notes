@@ -39,4 +39,18 @@ wget "https://github.com/OTRS/otrs/archive/rel-6_0_18.tar.gz"
 
 
 # Config mail
+## IMAP
+
+## SMTP
+Set options, for example for
+
+Option                  | Value
+------------------------|----------
+SendmailModule          | SMTPS
+NotificationSenderEmail | otrs-email@yandex.ru
+SendmailModule::AuthPassword  | ********
+SendmailModule::AuthUser | otrs-email@yandex.ru
+SendmailModule::Host | smtp.yandex.ru
+SendmailNotificationEnvelopeFrom | otrs-email@yandex.ru
+
 
