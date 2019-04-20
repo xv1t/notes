@@ -32,7 +32,11 @@ sudo rm -rf /var/lib/apt/lists/*
 Go to https://github.com/OTRS/otrs/releases
 For example download a `rel-6_0_18`
 ```bash
-cd /tmp
-wget https://github.com/OTRS/otrs/archive/rel-6_0_18.tar.gz
+cd "/tmp"
+wget "https://github.com/OTRS/otrs/archive/rel-6_0_18.tar.gz"
 ```
+
+
+
+# Config mail
 
