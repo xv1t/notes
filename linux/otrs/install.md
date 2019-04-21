@@ -36,6 +36,26 @@ cd "/tmp"
 wget "https://github.com/OTRS/otrs/archive/rel-6_0_18.tar.gz"
 ```
 
+## Setup
+```bash
+/opt/otrs/bin/otrs.SetPermissions.pl --web-group=www-data; 
+perl /opt/otrs/bin/otrs.CheckModules.pl; 
+(cd /opt/otrs/Kernel/; cp Config.pm.dist Config.pm; chmod g+w Config.pm); 
+ln -s /opt/otrs/scripts/apache2-httpd.include.conf /etc/apache2/sites-available/otrs.conf; 
+a2ensite otrs.conf; 
+a2enmod cgi; 
+
+# create new config files
+cp /opt/otrs/var/cron/otrs_daemon.dist /opt/otrs/var/cron/otrs_daemon; 
+cp /opt/otrs/var/cron/aaa_base.dist /opt/otrs/var/cron/aaa_base;
+```
+
+## Run
+```bash
+su -c "/opt/otrs/bin/otrs.Daemon.pl start" -s /bin/bash otrs;
+su -c "/opt/otrs/bin/Cron.sh start" -s /bin/bash otrs;
+```
+
 
 
 # Config mail
