@@ -84,6 +84,8 @@ Restart web server and go to web ui
 ```bash
 systemctl restart "apache2"
 ```
+# Web install
+got to url `http://otrs.local/otrs/installer.pl`
 
 
 ## Run
