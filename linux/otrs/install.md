@@ -71,6 +71,21 @@ cp /opt/otrs/var/cron/otrs_daemon.dist /opt/otrs/var/cron/otrs_daemon;
 cp /opt/otrs/var/cron/aaa_base.dist /opt/otrs/var/cron/aaa_base;
 ```
 
+Create mysql database
+```sql
+create database otrs;
+
+-- password for example, change it!!
+grant all privileges on otrs.* to otrs identified by 'otrs';
+
+```
+
+Restart web server and go to web ui
+```bash
+systemctl restart "apache2"
+```
+
+
 ## Run
 ```bash
 su -c "/opt/otrs/bin/otrs.Daemon.pl start" -s /bin/bash otrs;
