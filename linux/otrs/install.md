@@ -52,6 +52,10 @@ For example download a `rel-6_0_18`
 cd "/tmp"
 wget "https://github.com/OTRS/otrs/archive/rel-6_0_18.tar.gz"
 ```
+Move app
+```bash
+mv rel-6_0_18.tar.gz /opt/otrs
+```
 
 ## Setup
 ```bash
