@@ -54,7 +54,7 @@ wget "https://github.com/OTRS/otrs/archive/rel-6_0_18.tar.gz"
 ```
 Move app
 ```bash
-mv rel-6_0_18.tar.gz /opt/otrs
+mv rel-6_0_18 /opt/otrs
 ```
 
 ## Setup
