@@ -16,7 +16,24 @@ sudo apt "install" -y \
 ```bash
 sudo apt install mysql-server
 ```
-Add A config to
+Add A config to `/etc/mysql/mysql.conf.d`
+create config file `otrs.cfg`
+```ini
+# otrs.cfg
+[mysqld]
+skip-host-cache
+skip-name-resolve
+max_allowed_packet = 64M
+query_cache_size = 32M
+innodb_log_file_size = 512M
+character-set-server = utf8
+collation-server = utf8_unicode_ci
+```
+
+Restart `mysql`
+```bash
+service "mysql" restart
+```
 
 ## Add account
 ```bash
