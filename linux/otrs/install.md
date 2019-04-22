@@ -100,17 +100,17 @@ su -c "/opt/otrs/bin/Cron.sh start" -s /bin/bash otrs;
 ## IMAP
 
 ## SMTP
-go to utl `/otrs/index.pl?Action=AdminSystemConfiguration`
+go to uкl `/otrs/index.pl?Action=AdminSystemConfiguration`
 Set options, for example for yandex.ru
 
 Option                  | Value
 ------------------------|----------
-SendmailModule          | SMTPS
+SendmailModule          | SMTPЕДЫ
 NotificationSenderEmail | otrs-email@yandex.ru
 SendmailModule::AuthPassword  | ********
 SendmailModule::AuthUser | otrs-email@yandex.ru
 SendmailModule::Host | smtp.yandex.ru
-SendmailModule::Port | 465
+SendmailModule::Port | 587
 SendmailNotificationEnvelopeFrom | otrs-email@yandex.ru
 
 
