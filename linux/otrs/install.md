@@ -105,7 +105,7 @@ Set options, for example for yandex.ru
 
 Option                  | Value
 ------------------------|----------
-SendmailModule          | SMTPЕДЫ
+SendmailModule          | SMTPTLS
 NotificationSenderEmail | otrs-email@yandex.ru
 SendmailModule::AuthPassword  | ********
 SendmailModule::AuthUser | otrs-email@yandex.ru
