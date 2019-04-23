@@ -21,3 +21,8 @@ SendmailNotificationEnvelopeFrom | otrs-email@yandex.ru
 
 
 1. /otrs/index.pl?Action=AdminSystemAddress
+
+## Время проверки сообщений
+
+Параметр `Daemon::SchedulerCronTaskManager::Task###MailAccountFetch`
+Установить Schedule в `*/2 * * * *` - проверка каждые 2 минуты, по умолчанию раз в 10 минут
