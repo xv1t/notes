@@ -6,5 +6,18 @@
 
 ## Sendmail
 
+go to url `/otrs/index.pl?Action=AdminSystemConfiguration`
+Set options, for example for yandex.ru
+
+Option                  | Value
+------------------------|----------
+SendmailModule          | SMTPTLS
+NotificationSenderEmail | otrs-email@yandex.ru
+SendmailModule::AuthPassword  | ********
+SendmailModule::AuthUser | otrs-email@yandex.ru
+SendmailModule::Host | smtp.yandex.ru
+SendmailModule::Port | 587
+SendmailNotificationEnvelopeFrom | otrs-email@yandex.ru
+
 
 1. /otrs/index.pl?Action=AdminSystemAddress
