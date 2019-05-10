@@ -60,3 +60,18 @@ systemctl is-active application.service
 systemctl is-enabled application.service
 systemctl is-failed application.servic
 ```
+
+## View unit file
+
+```bash
+systemctl cat application.service
+```
+## Show unit properties
+
+```
+systemctl show sshd.service
+```
+-------
+links
+https://www.8host.com/blog/upravlenie-servisami-i-yunitami-systemd-s-pomoshhyu-systemctl/
+https://habr.com/ru/company/infobox/blog/241237/
