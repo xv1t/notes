@@ -73,5 +73,5 @@ systemctl show sshd.service
 ```
 -------
 links
-https://www.8host.com/blog/upravlenie-servisami-i-yunitami-systemd-s-pomoshhyu-systemctl/
-https://habr.com/ru/company/infobox/blog/241237/
+1. https://www.8host.com/blog/upravlenie-servisami-i-yunitami-systemd-s-pomoshhyu-systemctl/
+2. https://habr.com/ru/company/infobox/blog/241237/
