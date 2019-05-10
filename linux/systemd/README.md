@@ -52,3 +52,11 @@ Delete from autostart
 ```bash
 sudo systemctl "disable" "application.service"
 ```
+
+## Check service status
+
+```bash
+systemctl is-active application.service
+systemctl is-enabled application.service
+systemctl is-failed application.servic
+```
