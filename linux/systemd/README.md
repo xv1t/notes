@@ -21,3 +21,28 @@ systemctl "list-unit-files" --state=enabled
 ```bash
 systemctl | grep "running"
 ```
+# Service control
+
+## Start/stop/reload
+
+```bash
+systemctl "start" "application.service"
+```
+or
+```bash
+systemctl "start" "application"
+```
+
+## enable/disable service
+
+Add to autostart
+
+```bash
+systemctl "enable" "application.service"
+```
+
+Delete from autostart
+
+```bash
+sudo systemctl "disable" "application.service"
+```
