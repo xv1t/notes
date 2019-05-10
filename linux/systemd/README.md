@@ -12,6 +12,10 @@ systemctl "list-unit-files"
 systemctl "list-unit-files" | grep "enabled"
 ```
 
+```bash
+systemctl "list-unit-files" --state=enabled
+```
+
 ## List running
 
 ```bash
