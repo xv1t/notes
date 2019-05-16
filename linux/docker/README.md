@@ -27,3 +27,13 @@ All by `uid` list
 ```
 docker ps -aq
 ```
+
+## Run container
+```
+docker run -
+```
+options | comment                            | examples
+---     |---                                 |---
+-d      | Run to background -d(aemon)        |
+-it     | run command                        | `docker run -t busybox sh`
+
