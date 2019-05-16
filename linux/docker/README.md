@@ -34,6 +34,6 @@ docker run -
 ```
 options | comment                            | examples
 ---     |---                                 |---
--d      | Run to background -d(aemon)        |
+-d      | Run to background -d(etached)        |
 -it     | run in current TTY                 | `docker run -t "busybox" sh`
 
