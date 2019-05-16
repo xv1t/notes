@@ -34,6 +34,23 @@ docker run -
 ```
 options | comment                            | examples
 ---     |---                                 |---
--d      | Run to background -d(etached)        |
+-d      | Run to background -d(etached)      |
 -it     | run in current TTY                 | `docker run -t "busybox" sh`
+--rm    | Remove container after stop
 
+## Stop comtainer
+
+Stop all running containers
+```
+docker stop `docker ps -aq`
+```
+
+## Remove container
+```
+docker rm CONTAINER_NAME
+```
+
+Remove all containers
+```
+docker rm `docker ps aq`
+```
