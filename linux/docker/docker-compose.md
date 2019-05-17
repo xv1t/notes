@@ -16,6 +16,11 @@ Attach to log
 docker-compose "logs" -f
 ```
 
+Attach to service `web` console
+```bash
+docker-compose exec "web" sh
+```
+
 
 Reconfig one service and restart it
 ```bash
