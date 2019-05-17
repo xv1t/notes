@@ -24,6 +24,6 @@ Reconfig one service and restart it
 # stop service
 docker-compose stop "web"
 docker-compose rm "web"
-docker-compose up "web"
+docker-compose up -d "web"
 
 ```
