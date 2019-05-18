@@ -10,27 +10,52 @@ Template/Users/
 
 Add to `AppView.php` method
 ```php
-    public function js($file = null)
+    public function initialize()
     {
-
-        if (!$file) {
-            $file = $this->_current;
-        }
-
-        $js_file = $file . '.js';
-        if (file_exists($js_file)) {
-            return join([
-                '<script>',
-                file_get_contents($js_file),
-                '</script>'
-            ]);
-        }
+       $this->loadHelper('Jj');
     }
-
 ```
 
-In the `Template/Users/index.ctp` add line in the last line `<?=$this->js()?>`
+Create file `View/Helper/JjHelper.php
+```php
+<?php
 
+namespace App\View\Helper;
+
+use Cake\View\Helper;
+
+class JjHelper extends Helper
+{
+    public function afterRender($event, $viewFile)
+    {
+        //$ctp_file = $this->_View->_current;
+
+        $js_file = $viewFile . '.js';
+
+        if (file_exists($js_file)) {
+
+            $short_ctp_name = str_replace([APP, '/', '.ctp'], ['', '_', ''], $viewFile);
+            //$jsFuncName
+
+            $this->_View->append('after_script');
+            echo "// $short_ctp_name \n";
+            echo file_get_contents($js_file);
+            $this->_View->end();
+        }
+
+        
+        //, "// $ctp_file");
+    }
+}
+````
+
+Change default layout. Add After `</body>`
+```
+<?= $this->fetch('after_script') ?>
+```
+
+
+In the `Template/Users/index.ctp` add line in the last line `<?=$this->js()?>`
 `index.ctp`
 
 ```php
