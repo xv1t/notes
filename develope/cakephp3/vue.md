@@ -1,4 +1,4 @@
-# Elegant method for inserting and JS coding
+# Elegant method for inserting Vue JS coding
 
 For example add JavaScript logic for `index.ctp` without tag `<script>` int ctp templates 
 
@@ -66,13 +66,6 @@ new Vue({
         btnClick( e ) {
             var btn = e.target;
             console.log( btn.getAttribute('name') );
-        },
-        editBtnClick( e ) {
-            var btn = e.target;
-            var tr = btn.parentElement.parentElement;
-            var id = parseInt( tr.getAttribute('data-id') );
-
-            console.log( { tr, id } );
         }
     }
 })
