@@ -30,6 +30,9 @@ Add to `AppView.php` method
 ```
 
 In the `Template/Users/index.ctp` add line in the last line `<?=$this->js()?>`
+
+`index.ctp`
+
 ```php
 <?php
 /* @var $this App\View\AppView */
