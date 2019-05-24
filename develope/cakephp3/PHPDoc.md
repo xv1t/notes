@@ -1,3 +1,16 @@
+# CakePHP3
+## VS Code
+
+in the *.ctp file
+
+```php
+/**
+ * @var \App\View\AppView $this
+ * @var \App\Model\Entity\Right $right
+ */
+ 
+```
+
 # CakePHP2
 ## Object property links
 
