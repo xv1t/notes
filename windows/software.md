@@ -67,3 +67,4 @@ Name                | link                                    | about
 --------------------|-----------------------------------------|-----------------------------------
 SFTP Net Drive      | http://www.sftpnetdrive.com/            | SFTP/SSH mount as network drive
 Advanced IP Scanner | http://www.advanced-ip-scanner.com/ru/  | Надежный и бесплатный сетевой сканер для анализа локальных сетей
+ RDP Wrapper        | https://github.com/stascorp/rdpwrap     | enable Remote Desktop Host support and concurrent RDP sessions on reduced functionality systems for home usage.
