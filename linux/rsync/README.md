@@ -78,3 +78,7 @@ rsync \
 ```
 12345678
 ```
+
+# links
+
+https://www.alexeykopytko.com/2017/rsync-howto/
