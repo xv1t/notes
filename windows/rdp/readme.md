@@ -52,3 +52,9 @@ Remote
 ```
 logoff 2 /server 192.168.0.100
 ```
+
+# `change logon`
+Disable logon for new sessions
+```
+change logon /disable
+```
