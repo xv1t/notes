@@ -1,0 +1,8 @@
+# Show sessions
+```
+quser
+```
+
+```
+qwinsta
+```
