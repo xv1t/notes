@@ -17,6 +17,7 @@ query session
 query session /counter
 ```
 # Manage sessions
+## Reset session
 ```
 rwinsta
 Сброс значений подсистем оборудования и программ сеанса в начальное состояние.
@@ -27,6 +28,19 @@ RESET SESSION {sessionname | sessionid} [/SERVER:servername] [/V]
   sessionid           Задает сеанс с идентификатором ID.
   /SERVER:<сервер>    Сервер терминалов (по умолчанию текущий).
   /V                  Вывод подробной информации.
+```
+
+```
+reset session 2
+```
+
+## Close all sessions
+```
+logoff rdp-tcp
+```
+## Disconect sessions
+```
+tsdiscon
 ```
 
 # close session
