@@ -23,3 +23,9 @@ RESET SESSION {sessionname | sessionid} [/SERVER:servername] [/V]
   /SERVER:<сервер>    Сервер терминалов (по умолчанию текущий).
   /V                  Вывод подробной информации.
 ```
+
+# close session
+Logoff session width `ID` = `2`
+```
+logoff 2
+```
