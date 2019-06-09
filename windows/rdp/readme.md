@@ -9,6 +9,7 @@ qwinsta
 
 ```
 query session
+query session /counter
 ```
 # Manage sessions
 ```
