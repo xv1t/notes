@@ -6,6 +6,10 @@ quser
 ```
 qwinsta
 ```
+
+```
+query session
+```
 # Manage sessions
 ```
 rwinsta
