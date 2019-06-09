@@ -3,6 +3,11 @@
 quser
 ```
 
+Renote
+```
+quser /server 192.168.0.100
+```
+
 ```
 qwinsta
 ```
@@ -28,4 +33,8 @@ RESET SESSION {sessionname | sessionid} [/SERVER:servername] [/V]
 Logoff session width `ID` = `2`
 ```
 logoff 2
+```
+Remote
+```
+logoff 2 /server 192.168.0.100
 ```
