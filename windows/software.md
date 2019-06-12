@@ -16,6 +16,7 @@ Name    | link
 --------|----------------------------------------------
  HWiNFO | https://www.hwinfo.com/download.php
  CPUz   | http://www.cpuid.com/softwares/cpu-z.html
+ CrystalDiskMark | https://osdn.net/projects/crystaldiskinfo/releases/
  
 ## Optimization
 Name                    | link
