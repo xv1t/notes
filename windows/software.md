@@ -75,3 +75,4 @@ Advanced IP Scanner | http://www.advanced-ip-scanner.com/ru/  | Надежный
 Name                | Link                | about
 --------------------|---------------------|-------
 YaAdmin             |http://yaadmin.kuharbogdan.com/ | Помощник администратора 1С
+Sysinternals        | https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
