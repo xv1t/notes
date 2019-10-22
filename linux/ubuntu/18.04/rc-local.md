@@ -2,6 +2,10 @@
 
 ## 1. create unit file
 `/etc/systemd/system/rc-local.service`
+```bash
+vim "/etc/systemd/system/rc-local.service"
+```
+
 ```ini
 [Unit]
  Description=/etc/rc.local Compatibility
@@ -34,4 +38,8 @@ Set content
 
 exit 0
 
+```
+## 3. Enable rc.local
+```bash
+systemctl enable "rc-local.service"
 ```
