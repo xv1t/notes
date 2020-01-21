@@ -5,13 +5,31 @@ New path, for example, `/new/path/docker`
 ## Edit file `/lib/systemd/system/docker.service`
 Find
 
+### Ubuntu 16.04
 ```ini
+[Service]
 ExecStart=/usr/bin/docker daemon -H fd://
 ```
 
 Change to
 ```ini
+[Service]
 ExecStart=/usr/bin/docker daemon -g /new/path/docker -H fd://
+```
+
+### Ubuntu 18.04
+
+find
+```
+[Service]
+ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+```
+
+
+```
+[Service]
+Type=notify
+ExecStart=/usr/bin/dockerd -g /new/path/docker -H fd:// --containerd=/run/containerd/containerd.sock
 ```
 
 ## Stop
