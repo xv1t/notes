@@ -20,15 +20,14 @@ ExecStart=/usr/bin/docker daemon -g /new/path/docker -H fd://
 ### Ubuntu 18.04
 
 find
-```
+```ini
 [Service]
 ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
 ```
 
 
-```
+```ini
 [Service]
-Type=notify
 ExecStart=/usr/bin/dockerd -g /new/path/docker -H fd:// --containerd=/run/containerd/containerd.sock
 ```
 
