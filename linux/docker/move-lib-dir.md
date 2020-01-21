@@ -32,13 +32,15 @@ ExecStart=/usr/bin/dockerd -g /new/path/docker -H fd:// --containerd=/run/contai
 ```
 
 ## Stop
-```sh
-systemctl stop "docker"
-```
 
 ```
 systemctl daemon-reload
 ```
+
+```sh
+systemctl stop "docker"
+```
+
 
 
 Copy old directoruy
