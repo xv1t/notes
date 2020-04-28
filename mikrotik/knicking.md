@@ -17,7 +17,17 @@ nc "host.example.com" 56763 -w 1
 
 # UDP
 nc -u "host.example.com" 56763 -w 1
+```
 
+### Linux device
+TCP
+```bash
+echo 1 > /dev/tcp/host.example.com/56763
+```
+
+UDP
+```bash
+echo 1 > /dev/udp/host.example.com/56763
 ```
 
 ## ICMP
