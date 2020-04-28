@@ -6,11 +6,11 @@ Knocking types
 
 ## ICMP
 Default `ping` packet size
-System | Size, bytes
--------|-----
-Windows| 32
-Linux  | 64
-macOS  | 64
+System   | Size, bytes
+---------|-----------:
+Windows  | 32
+Linux    | 64
+macOS    | 64
 RouterOS | 50
 
 ## Algorythm
