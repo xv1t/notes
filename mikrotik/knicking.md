@@ -4,7 +4,25 @@ Knocking types
 - UDP port
 - ICMP packet
 
+## TCP
+Methods:
+1. curl
+2. nc (NetCat)
+3. HTML page - fake network object with port: image, script, css
+
+### netcat
+```bash
+# TCP
+nc "host.example.com" 56763 -w 1
+
+# UDP
+nc -u "host.example.com" 56763 -w 1
+
+```
+
 ## ICMP
+Standard command in all systems - `ping`;
+
 Default `ping` packet size
 System   | Size, bytes
 ---------|-----------:
