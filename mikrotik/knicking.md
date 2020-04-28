@@ -2,7 +2,7 @@
 Knocking types
 - TCP port
 - UDP port
-- ICMP packet
+- ICMP packet with various size
 
 ## TCP
 Methods:
