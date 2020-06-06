@@ -15,6 +15,8 @@ Run this service as
 ## Docker
 Docker image selected is `joweisberg/phpvirtualbox` with support VirtualBox 6.*
 
+For Virualbox 5.* use image `jazzdd/phpvirtualbox`
+
 docker-compose.yaml
 ```yaml
 version: "3.2"
