@@ -1,5 +1,7 @@
 # Dynamics rules
-For DNS names of hosts only
+Simple method aka Mikrotik address lists with DNS names and dynamic resolve.
+
+For DNS names of hosts only.
 
 ## Main firewall script
 ```bash
