@@ -23,3 +23,6 @@ guest_name      Guest/RAM/Usage/Cache                    2996104 kB
 
 ## Real used memory
 Simple formula: `Guest/RAM/Usage/Total` - `Guest/RAM/Usage/Free`
+
+
+For our example: 8388152 - 7519332 = 868820 Kb
