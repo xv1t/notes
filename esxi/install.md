@@ -17,11 +17,17 @@ On worked host with any virtual software: VirtualBox, ESXI, Vmware Workstation
 
 ## Install driver
 1. Connect USB stick on your target host
-2. Start boot on USB stick
-3. find file, for example, `cd /; find | grep net55`
-4. Copy file to /tmp
-5. `esxcli software acceptance set –-level=CommunitySupported`
-6. `esxcli software vib install -v /tmp/net55-r8168-8.039.01-napi.x86_64.vib`
+2. Start boot ESXI on USB stick
+3. <F2><LOGIN/PASSWORD>
+  4. Troubleshoot Options
+  5. Enable ESXi Shell
+  6. Alt+<F1>
+  7. <LOGIN/PASSWORD>
+  8. cd `/vmfs/volumes`
+  9. find file, for example, `find | grep net55`
+  10. `cp ./65465465-cd425365-a0d6-cd088748363d/*.vib /tmp`
+11. `esxcli software acceptance set –-level=CommunitySupported`
+12. `esxcli software vib install -v /tmp/net55-r8168-8.039.01-napi.x86_64.vib`
 
 Waiting a lot of time
 1. Reboot
