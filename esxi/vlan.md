@@ -19,7 +19,9 @@ VMKernel NIC name | Port group
 ------------------|------------
 vmk1              | VLAN 111 - Host
 
-Ok, after this your ESXi host be was in the 111 VLAN, and assign DHCP addres from VLAN 111 successfull
+Ok, after this your ESXi host be was in the 111 VLAN, and assign DHCP addres from VLAN 111 successfull.
+
+:warning: After set portgroup `VLAN 111 - Host`, this port group is **not accessable** in the virtual machines networks!
 
 ## Virtual machine
 
