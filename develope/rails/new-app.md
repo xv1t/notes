@@ -11,6 +11,11 @@ rails new "railstestapp3" \
     —skip-active-storage
 ```
 
+One line
+```bash
+rails new "railstestapp3" —skip-webpack-install —skip-action-mailer —skip-action-mailbox —skip-active-storage
+```
+
 ## Modify file `config/environments/development.rb`
 ```ruby
 config.webpacker.check_yarn_integrity = false
