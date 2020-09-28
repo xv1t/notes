@@ -33,7 +33,7 @@
 
 ```bash
 BOT_TOKEN="1872691763:FFFF-RMvnU0Bn8y5IWcfDfdsEdgU_tTVg"
-echo https://api.telegram.org/bot$BOT_TOKEN/getUpdates
+echo https://api.telegram.org/bot${BOT_TOKEN}/getUpdates
 ```
 In console return a url
 
