@@ -28,3 +28,15 @@
 :global telegramMessage "Host  DESKTOP-7gt4u is DOWN :)"
 /system script run telegram
 ```
+
+## Show JSON data
+
+```bash
+BOT_TOKEN="1872691763:FFFF-RMvnU0Bn8y5IWcfDfdsEdgU_tTVg"
+echo https://api.telegram.org/bot$BOT_TOKEN/getUpdates
+```
+In console return a url
+
+```
+https://api.telegram.org/bot1872691763:FFFF-RMvnU0Bn8y5IWcfDfdsEdgU_tTVg/getUpdates
+```
