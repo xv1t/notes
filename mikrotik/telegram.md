@@ -14,7 +14,7 @@
 
 :set chatid "-12345678"
 
-/tool fetch url="https://api.telegram.org/bot$token/sendMessage\?chat_id=$chatid&text=$telegramMessage"
+/tool fetch url="https://api.telegram.org/bot$token/sendMessage\?chat_id=$chatid&text=$telegramMessage" output=none
 ```
 
 ## Netwatch up
