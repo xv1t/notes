@@ -15,7 +15,7 @@ ln -s ".bash_profile" ".bashrc"
 ```
 ## Clear bash sessions
 ```bash
-rm -P ~/.bash_sessions/
+rm -P ~/.bash_sessions/*
 ```
 
 Create dir `~/.bash_sessions_disable`
