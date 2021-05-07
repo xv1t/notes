@@ -10,6 +10,7 @@ Google Chrome       | [online install](https://www.google.ru/chrome/browser/desk
 Skype               | https://www.skype.com/ru/download-skype/skype-for-computer/
 Firefox             | https://www.mozilla.org/ru/firefox/all/
 Thunderbird         | https://www.mozilla.org/en-US/thunderbird/all/
+PDFBinder           | https://code.google.com/archive/p/pdfbinder/downloads (DotNetFx 3.5 req)
 
 ## Hardware
 Name    | link
